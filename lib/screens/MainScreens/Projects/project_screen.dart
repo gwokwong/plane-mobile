@@ -41,7 +41,7 @@ class _ProjectScreenState extends ConsumerState<ProjectScreen> {
         title: Row(
           children: [
             CustomText(
-              'Projects',
+              '项目',
               type: FontStyle.H4,
               fontWeight: FontWeightt.Semibold,
               color: themeProvider.themeManager.primaryTextColor,
@@ -121,7 +121,7 @@ class _ProjectScreenState extends ConsumerState<ProjectScreen> {
                               checkStarredProjects(
                                       projects: projectProvider.projects)
                                   ? CustomText(
-                                      'Favorites',
+                                      '收藏夹',
                                       type: FontStyle.Medium,
                                       fontWeight: FontWeightt.Medium,
                                       color: themeProvider
@@ -512,7 +512,7 @@ class _ProjectScreenState extends ConsumerState<ProjectScreen> {
                                               CustomText(
                                                 projectProvider.projects[index]
                                                         ['is_member']
-                                                    ? 'Member'
+                                                    ? '成员'
                                                     : 'Not a Member',
                                                 // color: themeProvider.strokeColor,
                                                 type: FontStyle.Medium,

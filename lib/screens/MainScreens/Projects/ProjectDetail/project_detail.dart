@@ -306,7 +306,7 @@ class _ProjectDetailState extends ConsumerState<ProjectDetail> {
                                                           size: 20,
                                                         ),
                                                         CustomText(
-                                                          ' Issue',
+                                                          ' 任务',
                                                           type:
                                                               FontStyle.Medium,
                                                           color: Colors.white,
@@ -357,7 +357,7 @@ class _ProjectDetailState extends ConsumerState<ProjectDetail> {
                                                   size: 19,
                                                 ),
                                                 CustomText(
-                                                  ' Layout',
+                                                  ' 布局',
                                                   type: FontStyle.Medium,
                                                   color: Colors.white,
                                                   overrride: true,
@@ -418,7 +418,7 @@ class _ProjectDetailState extends ConsumerState<ProjectDetail> {
                                                         size: 19,
                                                       ),
                                                       CustomText(
-                                                        ' Views',
+                                                        ' 字段',
                                                         type: FontStyle.Medium,
                                                         color: Colors.white,
                                                         overrride: true,
@@ -470,7 +470,7 @@ class _ProjectDetailState extends ConsumerState<ProjectDetail> {
                                                   size: 19,
                                                 ),
                                                 CustomText(
-                                                  ' Filters',
+                                                  ' 过滤',
                                                   type: FontStyle.Medium,
                                                   color: Colors.white,
                                                   overrride: true,

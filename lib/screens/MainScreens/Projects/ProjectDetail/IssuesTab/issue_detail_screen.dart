@@ -357,7 +357,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       CustomText(
-                                        'Title',
+                                        '标题',
                                         type: FontStyle.Medium,
                                         fontWeight: FontWeightt.Medium,
                                         color: themeProvider
@@ -369,7 +369,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                                       TextFormField(
                                         validator: (val) {
                                           if (val!.isEmpty) {
-                                            return '*required';
+                                            return '*必填项';
                                           }
                                           return null;
                                         },
@@ -419,7 +419,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                                       const SizedBox(
                                           height: spaceBetweenSections),
                                       CustomText(
-                                        'Description',
+                                        '描述',
                                         type: FontStyle.Medium,
                                         fontWeight: FontWeightt.Medium,
                                         color: themeProvider
@@ -432,7 +432,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                                         onTap: () {
                                           CustomToast().showToast(
                                               context,
-                                              'You can\'t perform this operation through Plane Mobile',
+                                              '无法在移动端执行此操作',
                                               themeProvider,
                                               toastType: ToastType.warning);
                                           return;
@@ -450,7 +450,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                                       Row(
                                         children: [
                                           CustomText(
-                                            'Sub Issue',
+                                            '子任务',
                                             type: FontStyle.Medium,
                                             fontWeight: FontWeightt.Medium,
                                             color: themeProvider
@@ -517,7 +517,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                                                     .placeholderTextColor,
                                               ),
                                               CustomText(
-                                                'Add Sub Issue',
+                                                '添加子任务',
                                                 type: FontStyle.Medium,
                                                 fontWeight: FontWeightt.Regular,
                                                 color: themeProvider
@@ -532,7 +532,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                                       const SizedBox(
                                           height: spaceBetweenSections),
                                       CustomText(
-                                        'Details',
+                                        '详情',
                                         type: FontStyle.Medium,
                                         fontWeight: FontWeightt.Medium,
                                         color: themeProvider
@@ -624,8 +624,8 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                                             children: [
                                               CustomText(
                                                 expanded
-                                                    ? "View less"
-                                                    : 'View all',
+                                                    ? "收起更多"
+                                                    : '查看全部',
                                                 type: FontStyle.Medium,
                                                 fontWeight: FontWeightt.Regular,
                                                 color: themeProvider
@@ -1414,7 +1414,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                       BlendMode.srcIn)),
               const SizedBox(width: 10),
               CustomText(
-                'State',
+                '状态',
                 type: FontStyle.Medium,
                 fontWeight: FontWeightt.Regular,
                 color: themeProvider.themeManager.placeholderTextColor,
@@ -1499,7 +1499,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
               const SizedBox(width: 10),
 
               CustomText(
-                'Assignees',
+                '负责人',
                 type: FontStyle.Medium,
                 fontWeight: FontWeightt.Regular,
                 color: themeProvider.themeManager.placeholderTextColor,
@@ -1589,7 +1589,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
               const SizedBox(width: 10),
 
               CustomText(
-                'Priority',
+                '优先级',
                 type: FontStyle.Medium,
                 fontWeight: FontWeightt.Regular,
                 color: themeProvider.themeManager.placeholderTextColor,
@@ -1599,7 +1599,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                   ? Row(
                       children: [
                         CustomText(
-                          'Select',
+                          '选择',
                           type: FontStyle.Medium,
                           fontWeight: FontWeightt.Regular,
                           color: themeProvider.themeManager.primaryTextColor,
@@ -1671,7 +1671,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
             const SizedBox(width: 10),
 
             CustomText(
-              'Estimate',
+              '估算',
               type: FontStyle.Medium,
               fontWeight: FontWeightt.Regular,
               color: themeProvider.themeManager.placeholderTextColor,
@@ -1802,7 +1802,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                   const SizedBox(width: 8),
 
                   CustomText(
-                    'Label',
+                    '标签',
                     type: FontStyle.Medium,
                     fontWeight: FontWeightt.Regular,
                     color: themeProvider.themeManager.placeholderTextColor,
@@ -1814,7 +1814,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             CustomText(
-                              'Select',
+                              '选择',
                               type: FontStyle.Medium,
                               fontWeight: FontWeightt.Regular,
                               color:
@@ -1841,7 +1841,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                                 child: Row(
                                   children: [
                                     CustomText(
-                                      'Select',
+                                      '选择',
                                       type: FontStyle.Medium,
                                       fontWeight: FontWeightt.Regular,
                                       color: themeProvider
@@ -2311,7 +2311,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
               ),
               const SizedBox(width: 8),
               CustomText(
-                'Parent',
+                '父任务',
                 type: FontStyle.Medium,
                 color: themeProvider.themeManager.placeholderTextColor,
                 fontWeight: FontWeightt.Regular,

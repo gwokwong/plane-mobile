@@ -119,8 +119,8 @@ class _IssuesListSheetState extends ConsumerState<IssuesListSheet> {
                       children: [
                         CustomText(
                           widget.type == IssueDetailCategory.parent
-                              ? 'Add parent'
-                              : 'Add sub issues',
+                              ? '添加父任务'
+                              : '添加子任务',
                           type: FontStyle.H4,
                           fontWeight: FontWeightt.Semibold,
                           color: themeProvider.themeManager.primaryTextColor,
