@@ -32,7 +32,7 @@ class EmptyPlaceholder {
           Container(
             padding: const EdgeInsets.only(top: 35),
             child: CustomText(
-              'Cycles',
+              '周期',
               type: FontStyle.H5,
               fontWeight: FontWeightt.Semibold,
               color: themeProvider.themeManager.primaryTextColor,
@@ -42,7 +42,7 @@ class EmptyPlaceholder {
             width: 300,
             padding: const EdgeInsets.only(top: 10),
             child: CustomText(
-              'Sprint more effectively with Cycles by confining your project to a fixed amount of time. Create new cycle now.',
+              '将项目限制在固定时间内，利用周期更有效地冲刺。立即创建新周期',
               color: themeProvider.themeManager.placeholderTextColor,
               textAlign: TextAlign.center,
               type: FontStyle.Small,
@@ -75,7 +75,7 @@ class EmptyPlaceholder {
                     width: 10,
                   ),
                   CustomText(
-                    'Add Cycle',
+                    '添加新周期',
                     type: FontStyle.Small,
                     fontWeight: FontWeightt.Medium,
                     color: Colors.white,
@@ -107,7 +107,7 @@ class EmptyPlaceholder {
           Container(
             padding: const EdgeInsets.only(top: 35),
             child: CustomText(
-              'Create New Issue',
+              '创建新任务',
               type: FontStyle.H5,
               fontWeight: FontWeightt.Semibold,
               color: themeProvider.themeManager.primaryTextColor,
@@ -118,7 +118,7 @@ class EmptyPlaceholder {
             padding: const EdgeInsets.only(top: 10),
             child: CustomText(
               //create issues text
-              'Issues help you track individual pieces of work. With Issues, keep track of what\'s going on, who is working on it, and what\'s done.',
+              '任务可以帮助你跟踪单个工作。有了"任务"，你就可以跟踪正在进行的工作、谁在处理以及完成了哪些工作。',
 
               color: themeProvider.themeManager.placeholderTextColor,
               textAlign: TextAlign.center,
@@ -638,7 +638,7 @@ class EmptyPlaceholder {
           Container(
             padding: const EdgeInsets.only(top: 35),
             child: CustomText(
-              'No projects yet',
+              '尚无项目',
               type: FontStyle.H5,
               fontWeight: FontWeightt.Semibold,
               color: themeProvider.themeManager.primaryTextColor,
@@ -648,7 +648,7 @@ class EmptyPlaceholder {
             width: 300,
             padding: const EdgeInsets.only(top: 10),
             child: CustomText(
-              'Get started by creating your first project.',
+              '开始创建您的第一个项目',
               color: themeProvider.themeManager.placeholderTextColor,
               textAlign: TextAlign.center,
               type: FontStyle.Small,
@@ -682,7 +682,7 @@ class EmptyPlaceholder {
                   SizedBox(
                     width: 10,
                   ),
-                  CustomText('Add Project',
+                  CustomText('新增项目',
                       type: FontStyle.Large,
                       overrride: true,
                       fontWeight: FontWeightt.Medium,

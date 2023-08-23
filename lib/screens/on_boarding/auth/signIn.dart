@@ -59,14 +59,14 @@ class _SignInState extends ConsumerState<SignIn> {
                         Row(
                           children: [
                             CustomText(
-                              'Sign In to',
+                              '登录',
                               type: FontStyle.H4,
                               fontWeight: FontWeightt.Semibold,
                               color:
                                   themeProvider.themeManager.primaryTextColor,
                             ),
                             CustomText(
-                              ' Plane',
+                              'Mission Plan',
                               type: FontStyle.H4,
                               fontWeight: FontWeightt.Semibold,
                               color: themeProvider.themeManager.primaryColour,
@@ -79,7 +79,7 @@ class _SignInState extends ConsumerState<SignIn> {
                         CustomRichText(
                           widgets: [
                             TextSpan(
-                                text: 'Email',
+                                text: '电子邮箱',
                                 style: TextStyle(
                                     color: themeProvider
                                         .themeManager.tertiaryTextColor)),
@@ -102,7 +102,7 @@ class _SignInState extends ConsumerState<SignIn> {
                           style: themeProvider.themeManager.textFieldTextStyle,
                           validator: (val) {
                             if (val!.isEmpty) {
-                              return '*Enter your email';
+                              return '*输入邮箱';
                             }
 
                             //check if firt letter is uppercase
@@ -113,7 +113,7 @@ class _SignInState extends ConsumerState<SignIn> {
                             if (!RegExp(
                                     r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
                                 .hasMatch(val)) {
-                              return '*Please Enter valid email';
+                              return '输入有效的电子邮箱地址';
                             } else {
                               return null;
                             }
@@ -125,7 +125,7 @@ class _SignInState extends ConsumerState<SignIn> {
                         CustomRichText(
                           widgets: [
                             TextSpan(
-                                text: 'Password',
+                                text: '密码',
                                 style: TextStyle(
                                     color: themeProvider
                                         .themeManager.tertiaryTextColor)),
@@ -148,7 +148,7 @@ class _SignInState extends ConsumerState<SignIn> {
                               .copyWith(),
                           validator: (val) {
                             if (val!.isEmpty) {
-                              return '*Enter your password';
+                              return '输入您的密码';
                             }
                             return null;
                             //check if firt letter is uppercase
@@ -163,7 +163,7 @@ class _SignInState extends ConsumerState<SignIn> {
                             InkWell(
                               onTap: () {},
                               child: CustomText(
-                                'Forgot Password?',
+                                '忘记密码?',
                                 type: FontStyle.Small,
                                 color: themeProvider.themeManager.primaryColour,
                               ),
@@ -179,7 +179,7 @@ class _SignInState extends ConsumerState<SignIn> {
                         Hero(
                           tag: 'button',
                           child: Button(
-                            text: 'Sign In',
+                            text: '登录',
                             ontap: () async {
                               if (!gkey.currentState!.validate()) {
                                 return;
@@ -262,7 +262,7 @@ class _SignInState extends ConsumerState<SignIn> {
                                   Navigator.pop(context);
                                 },
                                 child: CustomText(
-                                  'Go back',
+                                  '返回',
                                   type: FontStyle.Small,
                                   fontWeight: FontWeightt.Semibold,
                                   color: themeProvider

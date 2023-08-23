@@ -61,14 +61,14 @@ class _SignUpState extends ConsumerState<SignUp> {
                         Row(
                           children: [
                             CustomText(
-                              'Sign Up to',
+                              '注册',
                               type: FontStyle.H4,
                               fontWeight: FontWeightt.Semibold,
                               color:
                                   themeProvider.themeManager.primaryTextColor,
                             ),
                             CustomText(
-                              ' Plane',
+                              'Mission Plan',
                               type: FontStyle.H4,
                               fontWeight: FontWeightt.Semibold,
                               color: themeProvider.themeManager.primaryColour,
@@ -81,7 +81,7 @@ class _SignUpState extends ConsumerState<SignUp> {
                         CustomRichText(
                           widgets: [
                             TextSpan(
-                                text: 'Email',
+                                text: '电子邮箱',
                                 style: TextStyle(
                                     color: themeProvider
                                         .themeManager.tertiaryTextColor)),
@@ -103,18 +103,18 @@ class _SignUpState extends ConsumerState<SignUp> {
                               .copyWith(),
                           validator: (val) {
                             if (val!.isEmpty) {
-                              return '*Enter your email';
+                              return '*输入你的邮箱';
                             }
 
                             //check if firt letter is uppercase
-                            if (val[0] == val[0].toUpperCase()) {
-                              return "*First letter can't be uppercase";
-                            }
+                            // if (val[0] == val[0].toUpperCase()) {
+                            //   return "*请输入有效的电子邮箱";
+                            // }
 
                             if (!RegExp(
                                     r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
                                 .hasMatch(val)) {
-                              return '*Please Enter valid email';
+                              return '*请输入有效的电子邮箱';
                             } else {
                               return null;
                             }
@@ -126,7 +126,7 @@ class _SignUpState extends ConsumerState<SignUp> {
                         CustomRichText(
                           widgets: [
                             TextSpan(
-                                text: 'Password',
+                                text: '密码',
                                 style: TextStyle(
                                     color: themeProvider
                                         .themeManager.tertiaryTextColor)),
@@ -149,7 +149,7 @@ class _SignUpState extends ConsumerState<SignUp> {
                               .copyWith(),
                           validator: (val) {
                             if (val!.isEmpty) {
-                              return '*Enter your password';
+                              return '输入您的密码';
                             }
                             return null;
                             //check if firt letter is uppercase
@@ -161,7 +161,7 @@ class _SignUpState extends ConsumerState<SignUp> {
                         CustomRichText(
                           widgets: [
                             TextSpan(
-                                text: 'Confirm Password',
+                                text: '确认密码',
                                 style: TextStyle(
                                     color: themeProvider
                                         .themeManager.tertiaryTextColor)),
@@ -184,10 +184,10 @@ class _SignUpState extends ConsumerState<SignUp> {
                               .copyWith(),
                           validator: (val) {
                             if (val!.isEmpty) {
-                              return '*Enter your password';
+                              return '*输入您的密码';
                             }
                             if (val != password.text) {
-                              return '*Password does not match';
+                              return '*密码不一致';
                             }
                             return null;
                             //check if firt letter is uppercase
@@ -199,7 +199,7 @@ class _SignUpState extends ConsumerState<SignUp> {
                         Hero(
                           tag: 'button',
                           child: Button(
-                            text: 'Sign Up',
+                            text: '注册',
                             ontap: () async {
                               if (!gkey.currentState!.validate()) {
                                 return;
@@ -258,7 +258,7 @@ class _SignUpState extends ConsumerState<SignUp> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             const CustomText(
-                              'Already have an account?',
+                              '已有账号?',
                               type: FontStyle.Small,
                               // color: primaryColor,
                             ),
@@ -273,8 +273,8 @@ class _SignUpState extends ConsumerState<SignUp> {
                                   ),
                                 );
                               },
-                              child: CustomText(
-                                'Sign In',
+                              child: const CustomText(
+                                '去登录',
                                 type: FontStyle.Small,
                                 color: themeProvider.themeManager.primaryColour,
                                 fontWeight: FontWeightt.Semibold,
@@ -305,7 +305,7 @@ class _SignUpState extends ConsumerState<SignUp> {
                                   Navigator.of(context).pop();
                                 },
                                 child: CustomText(
-                                  'Go back',
+                                  '返回',
                                   type: FontStyle.Small,
                                   fontWeight: FontWeightt.Semibold,
                                   color: themeProvider
