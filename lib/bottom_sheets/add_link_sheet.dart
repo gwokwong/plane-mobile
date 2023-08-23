@@ -37,7 +37,7 @@ class _AddLinkSheetState extends ConsumerState<AddLinkSheet> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  CustomText('Add Link',
+                  CustomText('添加链接',
                       type: FontStyle.H4,
                       fontWeight: FontWeightt.Semibold,
                       color: themeProvider.themeManager.primaryTextColor),
@@ -55,7 +55,7 @@ class _AddLinkSheetState extends ConsumerState<AddLinkSheet> {
                 height: 10,
               ),
               CustomText(
-                'Title',
+                '标题',
                 type: FontStyle.Medium,
                 fontWeight: FontWeightt.Regular,
                 color: themeProvider.themeManager.primaryTextColor,
@@ -72,7 +72,7 @@ class _AddLinkSheetState extends ConsumerState<AddLinkSheet> {
                 height: 20,
               ),
               CustomText(
-                'URL',
+                '链接',
                 type: FontStyle.Medium,
                 fontWeight: FontWeightt.Regular,
                 color: themeProvider.themeManager.primaryTextColor,
@@ -91,7 +91,7 @@ class _AddLinkSheetState extends ConsumerState<AddLinkSheet> {
             height: 30,
           ),
           Button(
-            text: 'Add Link',
+            text: '添加链接',
             ontap: () {
               if (title.text.isNotEmpty && url.text.isNotEmpty) {
                 issueProvider.addLink(

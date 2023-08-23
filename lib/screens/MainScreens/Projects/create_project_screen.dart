@@ -72,7 +72,7 @@ class _CreateProjectState extends ConsumerState<CreateProject> {
         onPressed: () {
           Navigator.pop(context);
         },
-        text: 'Create Project',
+        text: '创建项目',
         fontType: FontStyle.H6,
       ),
       body: LoadingWidget(
@@ -249,7 +249,7 @@ class _CreateProjectState extends ConsumerState<CreateProject> {
                                         },
                                       ),
                                       CustomText(
-                                        'Public',
+                                        '公开',
                                         type: FontStyle.Medium,
                                         fontWeight: FontWeightt.Medium,
                                         color: themeProvider
@@ -276,7 +276,7 @@ class _CreateProjectState extends ConsumerState<CreateProject> {
                                         },
                                       ),
                                       CustomText(
-                                        'Secret',
+                                        '私密',
                                         type: FontStyle.Medium,
                                         fontWeight: FontWeightt.Medium,
                                         color: themeProvider
@@ -299,7 +299,7 @@ class _CreateProjectState extends ConsumerState<CreateProject> {
                                 controller: name,
                                 decoration: themeProvider
                                     .themeManager.textFieldDecoration
-                                    .copyWith(labelText: 'Enter project name'),
+                                    .copyWith(labelText: '输入项目名称'),
                                 onChanged: (value) {
                                   if (value.length < 6) {
                                     getIdentifier(name.text);
@@ -307,7 +307,7 @@ class _CreateProjectState extends ConsumerState<CreateProject> {
                                 },
                                 validator: (value) {
                                   if (value!.isEmpty) {
-                                    return 'Name is required';
+                                    return '名称是必填项';
                                   } else {
                                     return null;
                                   }
@@ -327,15 +327,15 @@ class _CreateProjectState extends ConsumerState<CreateProject> {
                                 decoration: themeProvider
                                     .themeManager.textFieldDecoration
                                     .copyWith(
-                                        labelText: 'Enter project identifier'),
+                                        labelText: '输入项目标识符'),
                                 validator: (value) {
                                   if (value!.isEmpty) {
-                                    return 'Identifier is required';
+                                    return '标识符是必填项';
                                   }
                                   if (!value.contains(RegExp(
                                     r'^[A-Z]+$',
                                   ))) {
-                                    return 'Identifier must be uppercase text.';
+                                    return '标识符必须是大写字母';
                                   } else {
                                     return null;
                                   }
@@ -353,7 +353,7 @@ class _CreateProjectState extends ConsumerState<CreateProject> {
                                 maxLines: 5,
                                 decoration: themeProvider
                                     .themeManager.textFieldDecoration
-                                    .copyWith(labelText: 'Enter description'),
+                                    .copyWith(labelText: '输入描述'),
                               ),
                             ),
                             // const SizedBox(
@@ -413,7 +413,7 @@ class _CreateProjectState extends ConsumerState<CreateProject> {
                     margin: const EdgeInsets.symmetric(vertical: 20),
                     padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Button(
-                      text: 'Create Project',
+                      text: '创建项目',
                       textColor: themeProvider.themeManager.textonColor,
                       ontap: () async {
                         if (validateSave()) {

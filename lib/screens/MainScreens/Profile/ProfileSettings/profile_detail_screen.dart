@@ -216,7 +216,7 @@ class _ProfileDetailScreenState extends ConsumerState<ProfileDetailScreen> {
                                 child: Row(
                                   children: [
                                     CustomText(
-                                      'Remove',
+                                      '移除',
                                       type: FontStyle.Medium,
                                       fontWeight: FontWeightt.Bold,
                                       color: themeProvider
@@ -332,7 +332,7 @@ class _ProfileDetailScreenState extends ConsumerState<ProfileDetailScreen> {
                                 margin: const EdgeInsets.only(left: 16),
                                 child: CustomText(
                                   profileProvider.dropDownValue == null
-                                      ? 'Select Role'
+                                      ? '选择角色'
                                       : profileProvider.dropDownValue!,
                                   type: FontStyle.Small,
                                   color: themeProvider

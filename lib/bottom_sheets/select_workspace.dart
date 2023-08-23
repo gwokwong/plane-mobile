@@ -271,7 +271,7 @@ class _SelectWorkspaceState extends ConsumerState<SelectWorkspace> {
                       width: 5,
                     ),
                     CustomText(
-                      'Create Workspace',
+                      '创建工作区',
                       type: FontStyle.H5,
                       color: themeProvider.themeManager.primaryColour,
                     ),

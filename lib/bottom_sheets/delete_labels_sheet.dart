@@ -29,7 +29,7 @@ class _DeleteLabelSheetState extends ConsumerState<DeleteLabelSheet> {
               Row(
                 children: [
                   const CustomText(
-                    'Delete Label',
+                    '删除标签',
                     type: FontStyle.H6,
                     fontWeight: FontWeightt.Semibold,
                   ),
@@ -50,7 +50,7 @@ class _DeleteLabelSheetState extends ConsumerState<DeleteLabelSheet> {
                 height: 20,
               ),
               CustomText(
-                'Are you sure you want to delete label- ${widget.labelName}? The label will be removed from all the issues.',
+                '您确定要删除标签- ${widget.labelName}? 所有任务上的标签都将被删除。',
                 type: FontStyle.H5,
                 fontSize: 20,
               )

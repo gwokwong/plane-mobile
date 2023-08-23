@@ -72,7 +72,7 @@ class _DeleteProjectSheetState extends ConsumerState<DeleteProjectSheet> {
                       ),
                     ),
                     TextSpan(
-                      text: ' to continue.',
+                      text: '请继续',
                       style: TextStyle(
                         color: themeProvider.isDarkThemeEnabled
                             ? lightGreeyColor

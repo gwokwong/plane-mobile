@@ -104,11 +104,10 @@ class _SignInState extends ConsumerState<SignIn> {
                             if (val!.isEmpty) {
                               return '*输入邮箱';
                             }
-
                             //check if firt letter is uppercase
-                            if (val[0] == val[0].toUpperCase()) {
-                              return "*First letter can't be uppercase";
-                            }
+                            // if (val[0] == val[0].toUpperCase()) {
+                            //   return "第一个字母不能是大写字母";
+                            // }
 
                             if (!RegExp(
                                     r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")

@@ -299,7 +299,7 @@ class _JoinWorkspacesState extends ConsumerState<JoinWorkspaces> {
                       : Container(),
                   widget.fromOnboard
                       ? Button(
-                          text: 'Skip',
+                          text: '跳过',
                           filledButton: false,
                           removeStroke: true,
                           textColor: greyColor,
@@ -364,7 +364,7 @@ class _JoinWorkspacesState extends ConsumerState<JoinWorkspaces> {
                               size: 20,
                             ),
                           ),
-                          text: 'Go back',
+                          text: '返回',
                           filledButton: false,
                           removeStroke: true,
                           textColor: greyColor,

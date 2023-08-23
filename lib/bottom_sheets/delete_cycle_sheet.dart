@@ -41,7 +41,7 @@ class _DeleteCycleSheetState extends ConsumerState<DeleteCycleSheet> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         const CustomText(
-                          'Delete Cycle',
+                          '删除周期',
                           type: FontStyle.H6,
                           fontWeight: FontWeightt.Semibold,
                         ),
@@ -61,7 +61,7 @@ class _DeleteCycleSheetState extends ConsumerState<DeleteCycleSheet> {
                       height: 20,
                     ),
                     CustomText(
-                      'Are you sure you want to delete cycle - ${widget.cycleName}? All of the data related to the cycle will be permanently removed. This action cannot be undone.',
+                      '您确定要删除周期 - ${widget.cycleName}? 与周期相关的所有数据将被永久删除。此操作无法撤销。',
                       maxLines: 5,
                     ),
                     const SizedBox(

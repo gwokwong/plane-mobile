@@ -77,7 +77,7 @@ class _SetupWorkspaceState extends ConsumerState<SetupWorkspace> {
                         //   style: TextStylingWidget.mainHeading,
                         // ),
                         CustomText(
-                          ' Create Workspaces',
+                          ' 创建工作区',
                           type: FontStyle.H4,
                           fontWeight: FontWeightt.Semibold,
                           color: themeProvider.themeManager.primaryTextColor,
@@ -93,7 +93,7 @@ class _SetupWorkspaceState extends ConsumerState<SetupWorkspace> {
                                   CustomRichText(
                                     widgets: [
                                       TextSpan(
-                                          text: 'Workspace name',
+                                          text: '工作区名称',
                                           style: TextStyle(
                                               color: themeProvider.themeManager
                                                   .tertiaryTextColor)),
@@ -126,7 +126,7 @@ class _SetupWorkspaceState extends ConsumerState<SetupWorkspace> {
                                     },
                                     validator: (value) {
                                       if (value!.isEmpty) {
-                                        return '*Workspace name is required';
+                                        return '*工作区名称是必填项';
                                       }
                                       // Name can only contain (" "), ( - ), ( _ ) & Alphanumeric characters.
                                       return null;
@@ -145,7 +145,7 @@ class _SetupWorkspaceState extends ConsumerState<SetupWorkspace> {
                                   CustomRichText(
                                     widgets: [
                                       TextSpan(
-                                          text: 'Workspace URL',
+                                          text: '工作区网址',
                                           style: TextStyle(
                                               color: themeProvider.themeManager
                                                   .tertiaryTextColor)),
@@ -163,7 +163,7 @@ class _SetupWorkspaceState extends ConsumerState<SetupWorkspace> {
                                   TextFormField(
                                     validator: (value) {
                                       if (value!.isEmpty) {
-                                        return '*Workspace url is required';
+                                        return '*工作区网址是必填项';
                                       }
                                       // Name can only contain (" "), ( - ), ( _ ) & Alphanumeric characters.
                                       return null;
@@ -186,7 +186,7 @@ class _SetupWorkspaceState extends ConsumerState<SetupWorkspace> {
                                           left: 15,
                                         ),
                                         child: CustomText(
-                                          'https://takeoff.plane.so/',
+                                          'http://sdwan.ink:8099/',
                                           type: FontStyle.Small,
                                           color: themeProvider.themeManager
                                               .placeholderTextColor,
@@ -203,7 +203,7 @@ class _SetupWorkspaceState extends ConsumerState<SetupWorkspace> {
                                   CustomRichText(
                                     widgets: [
                                       TextSpan(
-                                          text: 'How large is your company',
+                                          text: '公司的规模',
                                           style: TextStyle(
                                               color: themeProvider.themeManager
                                                   .tertiaryTextColor)),
@@ -260,7 +260,7 @@ class _SetupWorkspaceState extends ConsumerState<SetupWorkspace> {
                                                 const EdgeInsets.only(left: 16),
                                             child: CustomText(
                                                 prov.companySize == ''
-                                                    ? 'Select Company Size'
+                                                    ? '选择公司规模'
                                                     : prov.companySize,
                                                 type: FontStyle.Small,
                                                 color: themeProvider
@@ -294,7 +294,7 @@ class _SetupWorkspaceState extends ConsumerState<SetupWorkspace> {
                                     height: 30,
                                   ),
                                   Button(
-                                      text: 'Create Workspace',
+                                      text: '创建工作区',
                                       ontap: () async {
                                         //unfocus
                                         FocusScope.of(context).unfocus();
@@ -349,7 +349,7 @@ class _SetupWorkspaceState extends ConsumerState<SetupWorkspace> {
                                         } else {
                                           CustomToast().showToast(
                                               context,
-                                              'Workspace url is already taken',
+                                              '工作区网址已被占用',
                                               themeProvider,
                                               toastType: ToastType.defult);
                                         }
@@ -361,7 +361,7 @@ class _SetupWorkspaceState extends ConsumerState<SetupWorkspace> {
                         const Spacer(),
                         prov.selectedWorkspace != null && !widget.fromHomeScreen
                             ? Button(
-                                text: 'Skip',
+                                text: '跳过',
                                 filledButton: false,
                                 removeStroke: true,
                                 textColor: themeProvider
@@ -436,7 +436,7 @@ class _SetupWorkspaceState extends ConsumerState<SetupWorkspace> {
                                   Navigator.of(context).pop();
                                 },
                                 child: CustomText(
-                                  'Go back',
+                                  '返回',
                                   type: FontStyle.Small,
                                   color: themeProvider
                                       .themeManager.placeholderTextColor,

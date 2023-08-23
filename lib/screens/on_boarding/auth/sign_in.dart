@@ -535,7 +535,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
                                       });
                                     },
                                     child: CustomText(
-                                      'Go back',
+                                      '返回',
                                       type: FontStyle.Small,
                                       color: themeProvider
                                           .themeManager.placeholderTextColor,

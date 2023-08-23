@@ -56,7 +56,7 @@ class _InviteCOWorkersState extends ConsumerState<InviteCOWorkers> {
                     height: 30,
                   ),
                   CustomText(
-                    'Invite co-workers to team',
+                    '邀请同事加入团队',
                     type: FontStyle.H4,
                     fontWeight: FontWeightt.Semibold,
                     color: themeProvider.themeManager.primaryTextColor,
@@ -84,7 +84,7 @@ class _InviteCOWorkersState extends ConsumerState<InviteCOWorkers> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        CustomText('Co-workers Email',
+                                        CustomText('同事电子邮箱',
                                             type: FontStyle.Small,
                                             color: themeProvider.themeManager
                                                 .tertiaryTextColor),
@@ -127,7 +127,7 @@ class _InviteCOWorkersState extends ConsumerState<InviteCOWorkers> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
-                                        CustomText('Role',
+                                        CustomText('角色',
                                             type: FontStyle.Small,
                                             color: themeProvider.themeManager
                                                 .tertiaryTextColor),
@@ -207,7 +207,7 @@ class _InviteCOWorkersState extends ConsumerState<InviteCOWorkers> {
                                 ],
                               ),
                               invitations[index]['is_valid'] == false
-                                  ? CustomText('* Please enter valid email',
+                                  ? CustomText('* 请输入有效的电子邮箱',
                                       type: FontStyle.Small,
                                       color: themeProvider
                                           .themeManager.textErrorColor)
@@ -248,7 +248,7 @@ class _InviteCOWorkersState extends ConsumerState<InviteCOWorkers> {
 
                           //text
                           CustomText(
-                            'Add another',
+                            '再加一个',
                             type: FontStyle.Small,
                             fontWeight: FontWeightt.Medium,
                             color: themeProvider.themeManager.primaryColour,
@@ -271,7 +271,7 @@ class _InviteCOWorkersState extends ConsumerState<InviteCOWorkers> {
                               !validateEmail(invitations[0]['email'].text)
                           ? themeProvider.themeManager.disabledButtonColor
                           : themeProvider.themeManager.primaryColour,
-                      text: 'Continue',
+                      text: '继续',
                       disable: invitations.isEmpty ||
                               !validateEmail(invitations[0]['email'].text)
                           ? true
@@ -357,7 +357,7 @@ class _InviteCOWorkersState extends ConsumerState<InviteCOWorkers> {
                     height: 20,
                   ),
                   Button(
-                    text: 'Skip',
+                    text: '跳过',
                     filledButton: false,
                     removeStroke: true,
                     textColor: themeProvider.themeManager.placeholderTextColor,
@@ -432,7 +432,7 @@ class _InviteCOWorkersState extends ConsumerState<InviteCOWorkers> {
                             Navigator.of(context).pop();
                           },
                           child: CustomText(
-                            'Go back',
+                            '返回',
                             type: FontStyle.Small,
                             color:
                                 themeProvider.themeManager.placeholderTextColor,

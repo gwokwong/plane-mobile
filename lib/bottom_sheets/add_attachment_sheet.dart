@@ -48,7 +48,7 @@ class _AddAttachmentsSheetState extends ConsumerState<AddAttachmentsSheet> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               CustomText(
-                'Insert File',
+                '插入文件',
                 type: FontStyle.H4,
                 fontWeight: FontWeightt.Semibold,
                 color: themeProvider.themeManager.primaryTextColor,
@@ -66,7 +66,7 @@ class _AddAttachmentsSheetState extends ConsumerState<AddAttachmentsSheet> {
           ),
           const SizedBox(height: 15),
           Button(
-              text: 'Select FIle',
+              text: '选择文件',
               ontap: () async {
                 final result = await FilePicker.platform.pickFiles(
                     //allowMultiple: true,
@@ -76,13 +76,13 @@ class _AddAttachmentsSheetState extends ConsumerState<AddAttachmentsSheet> {
 
                 if (result == null) {
                   CustomToast().showToast(
-                      context, 'File is empty', themeProvider,
+                      context, '文件为空', themeProvider,
                       toastType: ToastType.warning);
                   Navigator.pop(context);
                   return;
                 } else if (result.files.single.size > 5000000) {
                   CustomToast().showToast(context,
-                      'File size should be less than 5MB', themeProvider,
+                      '文件大小应小于5MB', themeProvider,
                       toastType: ToastType.warning);
                   Navigator.pop(context);
                   return;

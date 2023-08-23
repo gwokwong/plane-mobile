@@ -16,13 +16,15 @@ import 'config/const.dart';
 import 'utils/enums.dart';
 // ignore: depend_on_referenced_packages
 import 'package:stack_trace/stack_trace.dart' as stack_trace;
-
+import 'package:intl/intl.dart';
+import 'package:intl/date_symbol_data_local.dart';  // 导入intl_messages.dart文件
 late SharedPreferences prefs;
 late String selectedTheme;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: '.env');
 
+  await initializeDateFormatting("zh_CN", null);  // 初始化中文本地化设置
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
     statusBarColor: Colors.transparent, // transparent status bar
     //status bar icons' color

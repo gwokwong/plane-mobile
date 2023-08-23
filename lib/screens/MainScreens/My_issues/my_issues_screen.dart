@@ -34,7 +34,7 @@ class _MyIssuesScreenState extends ConsumerState<MyIssuesScreen> {
     var projectProvider = ref.watch(ProviderList.projectProvider);
     return Scaffold(
         appBar: CustomAppBar(
-          text: 'My Issues',
+          text: '我的任务',
           onPressed: () {},
           leading: false,
           elevation: false,
@@ -51,7 +51,7 @@ class _MyIssuesScreenState extends ConsumerState<MyIssuesScreen> {
                           .projects
                           .isEmpty) {
                         CustomToast().showSimpleToast(
-                            'You dont have any projects yet, try creating one');
+                            '您还没有任何项目，尝试创建一个吧');
                       } else {
                         ref.watch(ProviderList.projectProvider).currentProject =
                             ref.watch(ProviderList.projectProvider).projects[0];

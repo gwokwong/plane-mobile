@@ -23,19 +23,19 @@ class _OnBoardingScreenState extends ConsumerState<OnBoardingScreen> {
 
   List data = [
     {
-      'title': 'Plan with Issues',
+      'title': '任务',
       'description':
-          'The issue is the building block of the Plane. Most concepts in Plane are either associated with issues and their properties.'
+          '任务是Mission Plan的基石。Mission Plan中的大多数概念都与任务及其属性有关。'
     },
     {
-      'title': 'Move with cycles',
+      'title': '随周期而动',
       'description':
-          'Cycles help you and your team to progress faster, similar to the sprints commonly used in agile development.'
+          '周期可以帮助您和您的团队加快进度，类似于敏捷开发中常用的冲刺阶段。'
     },
     {
-      'title': 'Break into modules',
+      'title': '分解为模块',
       'description':
-          'Modules break your big think into Projects or Features,  to help you organize better.'
+          '模块可将您的重要想法分解为项目或功能，帮助您更好地进行组织'
     }
   ];
 
@@ -677,7 +677,7 @@ class _OnBoardingScreenState extends ConsumerState<OnBoardingScreen> {
               Hero(
                 tag: 'button',
                 child: Button(
-                  text: 'Get Started',
+                  text: '立即开始',
                   ontap: () {
                     Navigator.push(
                       context,

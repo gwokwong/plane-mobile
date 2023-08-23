@@ -48,7 +48,7 @@ class _ForgotPasswordState extends ConsumerState<ForgotPassword> {
                     Row(
                       children: [
                         const CustomText(
-                          'Forgot Password',
+                          '忘记密码',
                           type: FontStyle.H4,
                           fontWeight: FontWeightt.Semibold,
                         ),
@@ -65,7 +65,7 @@ class _ForgotPasswordState extends ConsumerState<ForgotPassword> {
                     ),
                     const CustomRichText(
                       widgets: [
-                        TextSpan(text: 'Email'),
+                        TextSpan(text: '电子邮箱'),
                         TextSpan(text: '*', style: TextStyle(color: Colors.red))
                       ],
                       type: FontStyle.Small,
@@ -79,18 +79,18 @@ class _ForgotPasswordState extends ConsumerState<ForgotPassword> {
                           .copyWith(),
                       validator: (val) {
                         if (val!.isEmpty) {
-                          return '*Enter your email';
+                          return '输入您的电子邮箱';
                         }
 
                         //check if firt letter is uppercase
-                        if (val[0] == val[0].toUpperCase()) {
-                          return "*First letter can't be uppercase";
-                        }
+                        // if (val[0] == val[0].toUpperCase()) {
+                        //   return "第一个字母不能是大写字母";
+                        // }
 
                         if (!RegExp(
                                 r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
                             .hasMatch(val)) {
-                          return '*Please Enter valid email';
+                          return '请输入有效的电子邮箱';
                         } else {
                           return null;
                         }
@@ -100,7 +100,7 @@ class _ForgotPasswordState extends ConsumerState<ForgotPassword> {
                       height: 25,
                     ),
                     Button(
-                        text: 'Send Code',
+                        text: '发送验证码',
                         ontap: () async {
                           if (formKey.currentState!.validate()) {
                             await authProvider.sendForgotCode(
@@ -114,7 +114,7 @@ class _ForgotPasswordState extends ConsumerState<ForgotPassword> {
                               // ignore: use_build_context_synchronously
                               ScaffoldMessenger.of(context).showSnackBar(
                                   const SnackBar(
-                                      content: Text('Please check the email')));
+                                      content: Text('请查看电子邮件')));
                             }
                           }
                         }),

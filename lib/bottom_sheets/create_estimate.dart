@@ -82,7 +82,7 @@ class _CreateEstimateState extends ConsumerState<CreateEstimate> {
                       ),
                       const CustomRichText(
                         widgets: [
-                          TextSpan(text: 'Title'),
+                          TextSpan(text: '标题'),
                           TextSpan(
                             text: '*',
                             style: TextStyle(
@@ -98,7 +98,7 @@ class _CreateEstimateState extends ConsumerState<CreateEstimate> {
                       TextFormField(
                         validator: (value) {
                           if (value!.isEmpty) {
-                            return 'Please enter a title';
+                            return '请输入标题';
                           }
                           return null;
                         },
@@ -111,7 +111,7 @@ class _CreateEstimateState extends ConsumerState<CreateEstimate> {
                       ),
                       const CustomRichText(
                         widgets: [
-                          TextSpan(text: 'Description'),
+                          TextSpan(text: '描述'),
                           // TextSpan(
                           //   text: '*',
                           //   style: TextStyle(
@@ -150,7 +150,7 @@ class _CreateEstimateState extends ConsumerState<CreateEstimate> {
                       TextFormField(
                         validator: (value) {
                           if (value!.isEmpty) {
-                            return 'Please enter a point';
+                            return '请输入点';
                           }
                           return null;
                         },

@@ -21,12 +21,12 @@ class ProfileProvider extends ChangeNotifier {
   String? dropDownValue;
   String? slug;
   List<String> dropDownItems = [
-    'Founder or learship team',
-    'Product manager',
-    'Designer',
-    'Software developer',
-    'Freelancer',
-    'Other'
+    '创始人或学习小组',
+    '产品经理',
+    '设计师',
+    '软件开发人员',
+    '自由职业者',
+    '其他'
   ];
   String theme = 'Light';
   int roleIndex = -1;

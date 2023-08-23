@@ -25,7 +25,7 @@ class _CompanySizeState extends ConsumerState<CompanySize> {
           Row(
             children: [
               const CustomText(
-                'Company Size',
+                '公司规模',
                 type: FontStyle.H6,
                 fontWeight: FontWeightt.Semibold,
               ),
@@ -58,19 +58,19 @@ class _CompanySizeState extends ConsumerState<CompanySize> {
                         vertical: VisualDensity.minimumDensity,
                       ),
                       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                      fillColor: workspaceProvider.companySize == 'Just myself'
+                      fillColor: workspaceProvider.companySize == '只是我自己'
                           ? null
                           : MaterialStateProperty.all<Color>(
                               themeProvider.themeManager.borderSubtle01Color),
                       groupValue: workspaceProvider.companySize,
                       activeColor: themeProvider.themeManager.primaryColour,
-                      value: 'Just myself',
+                      value: '只是我自己',
                       onChanged: (val) {
                         //workspaceProvider.changeCompanySize(size: 'Just myself');
                       }),
                   const SizedBox(width: 10),
                   const CustomText(
-                    'Just myself',
+                    '只是我自己',
                     type: FontStyle.Small,
                   ),
                 ],

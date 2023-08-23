@@ -25,12 +25,12 @@ class DashBoardScreen extends ConsumerStatefulWidget {
 class _DashBoardScreenState extends ConsumerState<DashBoardScreen> {
   String greetAtTime(int hourIn24HourFormate) {
     if (hourIn24HourFormate < 12) {
-      return 'Good Morning';
+      return '早上好';
     } else if (hourIn24HourFormate < 17) {
       // 17 = 5 pm
-      return 'Good Afternoon';
+      return '下午好';
     } else {
-      return 'Good evening';
+      return '晚上好';
     }
   }
 
@@ -57,10 +57,10 @@ class _DashBoardScreenState extends ConsumerState<DashBoardScreen> {
   }
 
   var gridCards = [
-    'Issues assigned to you',
-    'Pending Issues',
-    'Completed Issues',
-    'Due by this week'
+    '我的任务',
+    '待处理任务',
+    '已完成任务',
+    '本周到期'
   ];
   var gridCardKeys = [
     'assigned_issues_count',
@@ -119,7 +119,7 @@ class _DashBoardScreenState extends ConsumerState<DashBoardScreen> {
                           const SizedBox(width: 5),
                           CustomText(
                             //DateFormat('EEEE, MMM dd  hh:mm ').format(DateTime.now()),
-                            DateFormat('EEEE, MMM dd,')
+                            DateFormat('EEEE, MM-dd,', 'zh_CN')
                                 .add_jm()
                                 .format(DateTime.now()),
                             type: FontStyle.XSmall,
@@ -137,7 +137,7 @@ class _DashBoardScreenState extends ConsumerState<DashBoardScreen> {
             const SizedBox(
               height: 20,
             ),
-            dashboardProvider.hideGithubBlock == false
+            dashboardProvider.hideGithubBlock == true
                 ? Stack(
                     children: [
                       Container(
@@ -210,7 +210,7 @@ class _DashBoardScreenState extends ConsumerState<DashBoardScreen> {
                                         const SnackBar(
                                           backgroundColor: Colors.redAccent,
                                           content: Text(
-                                              'Something went wrong !',
+                                              '出问题了！',
                                               style: TextStyle(
                                                   color: Colors.white)),
                                         ),
@@ -271,7 +271,7 @@ class _DashBoardScreenState extends ConsumerState<DashBoardScreen> {
                         ),
                         const SizedBox(height: 10),
                         CustomText(
-                          'Manage your projects by creating issues, cycles, modules, views and pages.',
+                          '通过创建任务、周期、模块、视图和页面来管理项目',
                           type: FontStyle.Small,
                           color: themeProvider.themeManager.tertiaryTextColor,
                         ),
@@ -294,7 +294,7 @@ class _DashBoardScreenState extends ConsumerState<DashBoardScreen> {
                               color: const Color.fromRGBO(63, 118, 255, 1),
                             ),
                             child: const CustomText(
-                              'Create Project',
+                              '创建项目',
                               type: FontStyle.Small,
                               fontWeight: FontWeightt.Medium,
                               color: Colors.white,

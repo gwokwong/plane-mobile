@@ -59,7 +59,7 @@ class _AssigneeSheetState extends ConsumerState<AssigneeSheet> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const CustomText(
-                        'Select Assignees',
+                        '选择负责人',
                         type: FontStyle.H4,
                         fontWeight: FontWeightt.Semibold,
                       ),
@@ -208,7 +208,7 @@ class _AssigneeSheetState extends ConsumerState<AssigneeSheet> {
                     height: 15,
                   ),
                   Button(
-                    text: 'Select Assignees',
+                    text: '选择负责人',
                     ontap: () {
                       Navigator.of(context).pop();
                     },

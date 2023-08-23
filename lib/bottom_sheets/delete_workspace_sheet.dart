@@ -83,7 +83,7 @@ class _DeleteWorkspaceState extends ConsumerState<DeleteWorkspace> {
                       ),
                     ),
                     TextSpan(
-                      text: ' to continue.',
+                      text: '请继续',
                       style: TextStyle(
                         color: themeProvider.isDarkThemeEnabled
                             ? lightGreeyColor
@@ -101,14 +101,14 @@ class _DeleteWorkspaceState extends ConsumerState<DeleteWorkspace> {
                 decoration:
                     themeProvider.themeManager.textFieldDecoration.copyWith(
                   // hintText: 'Enter project name',
-                  labelText: 'Workspace Name',
+                  labelText: '工作区名称',
                   //avaid the label text from floating
                   floatingLabelBehavior: FloatingLabelBehavior.never,
                   filled: true,
                 ),
                 validator: (value) {
                   if (value!.trim() != widget.workspaceName) {
-                    return 'Workspace name does not match';
+                    return '工作区名称不一致';
                   }
                   return null;
                 },

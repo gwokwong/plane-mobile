@@ -33,7 +33,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
       'menu': 'Profile Setttings',
       'items': [
         {
-          'title': 'General',
+          'title': '通用',
           'icon': Icons.person_outline,
           'onTap': (context) {
             Navigator.push(
@@ -72,7 +72,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
       'menu': 'Workspace Settings',
       'items': [
         {
-          'title': 'General',
+          'title': '通用',
           'icon': Icons.workspaces_outline,
           'onTap': (context) {
             Navigator.push(
@@ -84,7 +84,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
           }
         },
         {
-          'title': 'Members',
+          'title': '成员',
           'icon': Icons.people_outline,
           'onTap': (context) {
             Navigator.push(

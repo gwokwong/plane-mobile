@@ -55,8 +55,8 @@ class _BlockSheetState extends ConsumerState<BlockSheet> {
                   children: [
                     CustomText(
                       widget.operation == CRUD.create
-                          ? 'Add Block'
-                          : 'Update Block',
+                          ? '添加区块'
+                          : '更新区块',
                       type: FontStyle.H4,
                       fontWeight: FontWeightt.Semibold,
                       color: themeProvider.themeManager.primaryTextColor,
@@ -77,7 +77,7 @@ class _BlockSheetState extends ConsumerState<BlockSheet> {
                 const Row(
                   children: [
                     CustomText(
-                      'Title',
+                      '标题',
                       type: FontStyle.Small,
                       fontWeight: FontWeightt.Regular,
                     ),
@@ -97,7 +97,7 @@ class _BlockSheetState extends ConsumerState<BlockSheet> {
                 const Row(
                   children: [
                     CustomText(
-                      'Write something',
+                      '写点什么',
                       type: FontStyle.Small,
                       fontWeight: FontWeightt.Regular,
                     ),
@@ -149,8 +149,8 @@ class _BlockSheetState extends ConsumerState<BlockSheet> {
                     Navigator.pop(context);
                   },
                   text: widget.operation == CRUD.create
-                      ? 'Add Block'
-                      : 'Update Block',
+                      ? '添加区块'
+                      : '更新区块',
                 ),
                 Container(height: 20),
               ],

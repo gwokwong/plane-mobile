@@ -75,7 +75,7 @@ class _SetupProfileScreenState extends ConsumerState<SetupProfileScreen> {
                           //   style: TextStylingWidget.mainHeading,
                           // ),
                           CustomText(
-                            'Setup your profile',
+                            '设置个人资料',
                             type: FontStyle.H4,
                             fontWeight: FontWeightt.Semibold,
                             color: themeProvider.themeManager.primaryTextColor,
@@ -90,7 +90,7 @@ class _SetupProfileScreenState extends ConsumerState<SetupProfileScreen> {
                                 CustomRichText(
                                   widgets: [
                                     TextSpan(
-                                        text: 'First name',
+                                        text: '名字',
                                         style: TextStyle(
                                             color: themeProvider.themeManager
                                                 .tertiaryTextColor)),
@@ -124,7 +124,7 @@ class _SetupProfileScreenState extends ConsumerState<SetupProfileScreen> {
                                 CustomRichText(
                                   widgets: [
                                     TextSpan(
-                                        text: 'Last name',
+                                        text: '姓',
                                         style: TextStyle(
                                             color: themeProvider.themeManager
                                                 .tertiaryTextColor)),
@@ -142,7 +142,7 @@ class _SetupProfileScreenState extends ConsumerState<SetupProfileScreen> {
                                 TextFormField(
                                     validator: (val) {
                                       if (val!.isEmpty) {
-                                        return "*required ";
+                                        return "*必填项 ";
                                       }
                                       return null;
                                     },
@@ -157,7 +157,7 @@ class _SetupProfileScreenState extends ConsumerState<SetupProfileScreen> {
                                 CustomRichText(
                                   widgets: [
                                     TextSpan(
-                                        text: 'What is your Role?',
+                                        text: '您的角色是什么?',
                                         style: TextStyle(
                                             color: themeProvider.themeManager
                                                 .tertiaryTextColor)),
@@ -213,7 +213,7 @@ class _SetupProfileScreenState extends ConsumerState<SetupProfileScreen> {
                                               const EdgeInsets.only(left: 16),
                                           child: CustomText(
                                             prov.dropDownValue == null
-                                                ? 'Select Role'
+                                                ? '选择角色'
                                                 : prov.dropDownValue!,
                                             type: FontStyle.Small,
                                             color: themeProvider.themeManager
@@ -236,7 +236,7 @@ class _SetupProfileScreenState extends ConsumerState<SetupProfileScreen> {
                                 ),
                                 dropdownEmpty
                                     ? CustomText(
-                                        "*required",
+                                        "*必填项",
                                         type: FontStyle.Small,
                                         fontWeight: FontWeightt.Semibold,
                                         color: themeProvider
@@ -318,7 +318,7 @@ class _SetupProfileScreenState extends ConsumerState<SetupProfileScreen> {
                                     }
                                   },
                                   child: const Button(
-                                    text: 'Continue',
+                                    text: '继续',
                                   ),
                                 )
                               ],
@@ -355,7 +355,7 @@ class _SetupProfileScreenState extends ConsumerState<SetupProfileScreen> {
                                       width: 5,
                                     ),
                                     CustomText(
-                                      'Go back',
+                                      '返回',
                                       type: FontStyle.Small,
                                       fontWeight: FontWeightt.Semibold,
                                       color: themeProvider
