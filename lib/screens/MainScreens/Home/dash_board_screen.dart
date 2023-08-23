@@ -97,20 +97,11 @@ class _DashBoardScreenState extends ConsumerState<DashBoardScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      GestureDetector(
-                        onTap: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      const OnBoardingScreen()));
-                        },
-                        child: CustomText(
-                          '${greetAtTime(DateTime.now().hour)}, ${profileProvider.userProfile.firstName ?? 'User name'}',
-                          type: FontStyle.H5,
-                          fontWeight: FontWeightt.Semibold,
-                          maxLines: 2,
-                        ),
+                      CustomText(
+                        '${greetAtTime(DateTime.now().hour)}, ${profileProvider.userProfile.firstName ?? 'User name'}',
+                        type: FontStyle.H5,
+                        fontWeight: FontWeightt.Semibold,
+                        maxLines: 2,
                       ),
                       const SizedBox(height: 4),
                       Row(

@@ -273,7 +273,7 @@ class _SignUpState extends ConsumerState<SignUp> {
                                   ),
                                 );
                               },
-                              child: const CustomText(
+                              child: CustomText(
                                 '去登录',
                                 type: FontStyle.Small,
                                 color: themeProvider.themeManager.primaryColour,

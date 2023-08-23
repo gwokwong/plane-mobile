@@ -32,14 +32,16 @@ class _ResendCodeButtonState extends ConsumerState<ResendCodeButton> {
     timer = Timer.periodic(
       oneSec,
       (Timer timer) {
-        if (start == 0) {
-          setState(() {
-            timer.cancel();
-          });
-        } else {
-          setState(() {
-            start--;
-          });
+        if (mounted) {
+          if (start == 0) {
+            setState(() {
+              timer.cancel();
+            });
+          } else {
+            setState(() {
+              start--;
+            });
+          }
         }
       },
     );
