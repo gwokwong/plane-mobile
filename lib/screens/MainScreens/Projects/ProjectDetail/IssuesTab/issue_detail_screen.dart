@@ -663,7 +663,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                                           const SizedBox(
                                               height: spaceBetweenSections),
                                           CustomText(
-                                            'Attachments',
+                                            '附件',
                                             type: FontStyle.Medium,
                                             fontWeight: FontWeightt.Medium,
                                             color: themeProvider
@@ -743,8 +743,8 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                                                   issueProvider
                                                               .attachmentState ==
                                                           StateEnum.loading
-                                                      ? 'Uploading...'
-                                                      : 'Click to upload file here',
+                                                      ? '上传...'
+                                                      : '点击此处上传文件',
                                                   color: Colors.blueAccent,
                                                 ),
                                               ),
@@ -764,7 +764,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                                                 MainAxisAlignment.spaceBetween,
                                             children: [
                                               CustomText(
-                                                'Links',
+                                                '链接',
                                                 type: FontStyle.Medium,
                                                 fontWeight: FontWeightt.Medium,
                                                 color: themeProvider
@@ -856,7 +856,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                                                         .placeholderTextColor,
                                                   ),
                                                   CustomText(
-                                                    'Add',
+                                                    '添加',
                                                     type: FontStyle.Medium,
                                                     fontWeight:
                                                         FontWeightt.Regular,
@@ -873,7 +873,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                                       const SizedBox(
                                           height: spaceBetweenSections),
                                       CustomText(
-                                        'Activity',
+                                        '动态',
                                         type: FontStyle.Medium,
                                         fontWeight: FontWeightt.Medium,
                                         color: themeProvider
@@ -1509,7 +1509,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                   ? Row(
                       children: [
                         CustomText(
-                          'Select',
+                          '选择',
                           type: FontStyle.Medium,
                           fontWeight: FontWeightt.Regular,
                           color: themeProvider.themeManager.primaryTextColor,
@@ -2057,7 +2057,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                   ? Row(
                       children: [
                         CustomText(
-                          'Select',
+                          '选择',
                           type: FontStyle.Medium,
                           color: themeProvider.themeManager.primaryTextColor,
                           fontWeight: FontWeightt.Regular,
@@ -2208,7 +2208,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                   ? Row(
                       children: [
                         CustomText(
-                          'Select',
+                          '选择',
                           type: FontStyle.Medium,
                           color: themeProvider.themeManager.primaryTextColor,
                           fontWeight: FontWeightt.Regular,
@@ -2321,7 +2321,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                   ? Row(
                       children: [
                         CustomText(
-                          'Select issue',
+                          '选择任务',
                           type: FontStyle.Medium,
                           color: themeProvider.themeManager.primaryTextColor,
                           fontWeight: FontWeightt.Regular,
@@ -2571,7 +2571,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                 Row(
                   children: [
                     CustomText(
-                      'Select issues',
+                      '选择任务',
                       type: FontStyle.Medium,
                       fontWeight: FontWeightt.Regular,
                       color: themeProvider.themeManager.primaryTextColor,
@@ -2747,7 +2747,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                 Row(
                   children: [
                     CustomText(
-                      'Select issues',
+                      '选择任务',
                       type: FontStyle.Medium,
                       fontWeight: FontWeightt.Regular,
                       color: themeProvider.themeManager.primaryTextColor,
@@ -2919,7 +2919,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
               SvgPicture.asset('assets/svg_images/cycles_icon.svg'),
               const SizedBox(width: 8),
               CustomText(
-                'Cycle',
+                '周期',
                 type: FontStyle.Medium,
                 fontWeight: FontWeightt.Regular,
                 color: themeProvider.themeManager.placeholderTextColor,
@@ -2936,7 +2936,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                         issueProvider.issueDetails['issue_cycle'] != null
                             ? issueProvider.issueDetails['issue_cycle']
                                 ['cycle_detail']['name']
-                            : 'No Cycle',
+                            : '无周期',
                         textAlign: TextAlign.right,
                         type: FontStyle.Medium,
                         fontWeight: FontWeightt.Regular,
@@ -3059,7 +3059,7 @@ class _IssueDetailState extends ConsumerState<IssueDetail> {
                   : Row(
                       children: [
                         CustomText(
-                          'No Module',
+                          '无模块',
                           type: FontStyle.Medium,
                           fontWeight: FontWeightt.Regular,
                           color: themeProvider.themeManager.primaryTextColor,
