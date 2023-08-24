@@ -49,7 +49,7 @@ class _ActivityState extends ConsumerState<Activity> {
                           height: 10,
                         ),
                         CustomText(
-                          'Activity',
+                          '动态',
                           type: FontStyle.H4,
                           fontWeight: FontWeightt.Semibold,
                           color: themeProvider.themeManager.primaryTextColor,

@@ -45,7 +45,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
           }
         },
         {
-          'title': 'Activity',
+          'title': '动态',
           'icon': Icons.signal_cellular_alt,
           'onTap': (context) {
             Navigator.push(
@@ -57,7 +57,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
           }
         },
         {
-          'title': 'Preferences',
+          'title': '偏好',
           'icon': Icons.tune,
           'onTap': (context) {
             Navigator.push(
@@ -96,45 +96,46 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
               ),
             );
           }
-        },
+        }
+        ,
+        // {
+        //   'title': 'Billing & Plans',
+        //   'icon': Icons.credit_card,
+        //   'onTap': (context) {
+        //     Navigator.push(
+        //       context,
+        //       MaterialPageRoute(
+        //         builder: (context) => const BillingPlans(),
+        //       ),
+        //     );
+        //   }
+        // },
+        // {
+        //   'title': 'Integrations',
+        //   'icon': Icons.route,
+        //   'onTap': (context) {
+        //     Navigator.push(
+        //       context,
+        //       MaterialPageRoute(
+        //         builder: (context) => const Integrations(),
+        //       ),
+        //     );
+        //   }
+        // },
+        // {
+        //   'title': 'Import/Export',
+        //   'icon': Icons.swap_vert_circle_outlined,
+        //   'onTap': (context) {
+        //     Navigator.push(
+        //       context,
+        //       MaterialPageRoute(
+        //         builder: (context) => const ImportEport(),
+        //       ),
+        //     );
+        //   }
+        // },
         {
-          'title': 'Billing & Plans',
-          'icon': Icons.credit_card,
-          'onTap': (context) {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const BillingPlans(),
-              ),
-            );
-          }
-        },
-        {
-          'title': 'Integrations',
-          'icon': Icons.route,
-          'onTap': (context) {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const Integrations(),
-              ),
-            );
-          }
-        },
-        {
-          'title': 'Import/Export',
-          'icon': Icons.swap_vert_circle_outlined,
-          'onTap': (context) {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const ImportEport(),
-              ),
-            );
-          }
-        },
-        {
-          'title': 'Workspace Invites',
+          'title': '工作区邀请',
           'icon': Icons.upcoming_outlined,
           'onTap': (context) {
             Navigator.push(
@@ -166,7 +167,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
             Row(
               children: [
                 CustomText(
-                  'Profile',
+                  '个人资料',
                   type: FontStyle.H4,
                   fontWeight: FontWeightt.Semibold,
                   color: themeProvider.themeManager.primaryTextColor,
@@ -185,7 +186,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                         width: 5,
                       ),
                       CustomText(
-                        'Logout',
+                        '退出登录',
                         color: themeProvider.themeManager.textErrorColor,
                         type: FontStyle.Medium,
                       )
@@ -235,7 +236,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
               Row(
                 children: [
                   CustomText(
-                    'Logout',
+                    '退出登录',
                     type: FontStyle.H4,
                     fontWeight: FontWeightt.Semibold,
                     color: themeProvider.themeManager.primaryTextColor,
@@ -256,7 +257,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                 height: 5,
               ),
               CustomText(
-                'Are you sure you want to logout from your account?',
+                '您确定要注销账户吗?',
                 type: FontStyle.Small,
                 textAlign: TextAlign.left,
                 maxLines: 4,
@@ -265,7 +266,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
               const Spacer(),
               Button(
                 ontap: _onLogout,
-                text: 'Logout',
+                text: '退出登录',
                 color: themeProvider.themeManager.textErrorColor,
               ),
             ],
@@ -338,7 +339,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                 width: width * 0.5,
                 child: CustomText(
                   profileProvider.userProfile.email ??
-                      'rameshkumar2299@gmail.com',
+                      'gwokwong@gmail.com',
                   type: FontStyle.Medium,
                   maxLines: 1,
                 ),

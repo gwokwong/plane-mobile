@@ -221,7 +221,7 @@ class _MyIssuesScreenState extends ConsumerState<MyIssuesScreen> {
                                       margin: const EdgeInsets.symmetric(
                                           vertical: 10),
                                       child: CustomText(
-                                        'Assigned',
+                                        '已分配',
                                         color: selected == 0
                                             ? themeProvider
                                                 .themeManager.primaryColour
@@ -260,7 +260,7 @@ class _MyIssuesScreenState extends ConsumerState<MyIssuesScreen> {
                                       margin: const EdgeInsets.symmetric(
                                           vertical: 10),
                                       child: CustomText(
-                                        'Created',
+                                        '创建',
                                         overrride: true,
                                         color: selected == 1
                                             ? themeProvider
@@ -299,7 +299,7 @@ class _MyIssuesScreenState extends ConsumerState<MyIssuesScreen> {
                                       margin: const EdgeInsets.symmetric(
                                           vertical: 10),
                                       child: CustomText(
-                                        'Subscribed',
+                                        '已订阅',
                                         color: selected == 2
                                             ? themeProvider
                                                 .themeManager.primaryColour

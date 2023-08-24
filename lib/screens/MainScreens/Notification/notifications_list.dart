@@ -30,13 +30,13 @@ class _NotificationsListState extends ConsumerState<NotificationsList> {
     String? format;
 
     if (difference.inDays > 0) {
-      format = '${difference.inDays} days ago';
+      format = '${difference.inDays} 天前';
     } else if (difference.inHours > 0) {
-      format = '${difference.inHours} hours ago';
+      format = '${difference.inHours} 小时前';
     } else if (difference.inMinutes > 0) {
-      format = '${difference.inMinutes} minutes ago';
+      format = '${difference.inMinutes} 分钟前';
     } else {
-      format = '${difference.inSeconds} seconds ago';
+      format = '${difference.inSeconds} 秒前';
     }
 
     return format;

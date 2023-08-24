@@ -31,7 +31,7 @@ class _NotifiactionScreenState extends ConsumerState<NotifiactionScreen> {
     return Scaffold(
       appBar: CustomAppBar(
         onPressed: () {},
-        text: "Notifications",
+        text: "通知",
         centerTitle: false,
         leading: false,
         fontType: FontStyle.H4,
@@ -63,7 +63,7 @@ class _NotifiactionScreenState extends ConsumerState<NotifiactionScreen> {
                 context,
                 MaterialPageRoute(
                   builder: (context) => const ExtraNotifications(
-                    title: 'Unread',
+                    title: '未读',
                     type: 'unread',
                   ),
                 ),
@@ -134,7 +134,7 @@ class _NotifiactionScreenState extends ConsumerState<NotifiactionScreen> {
                 context,
                 MaterialPageRoute(
                   builder: (context) => const ExtraNotifications(
-                    title: 'Archived',
+                    title: '存档',
                     type: 'archived',
                   ),
                 ),
