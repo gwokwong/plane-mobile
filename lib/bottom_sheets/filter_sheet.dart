@@ -166,7 +166,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
             child: Row(
               children: [
                 const CustomText(
-                  'Filter',
+                  '过滤',
                   type: FontStyle.H4,
                   fontWeight: FontWeightt.Semibold,
                 ),
@@ -623,7 +623,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                                         child: Row(
                                           children: [
                                             const CustomText(
-                                              'Custom Date',
+                                              '自定义日期',
                                               type: FontStyle.H4,
                                               fontWeight: FontWeightt.Semibold,
                                             ),
@@ -684,7 +684,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                                           children: [
                                             Expanded(
                                               child: Button(
-                                                text: 'Clear',
+                                                text: '清除',
                                                 filledButton: false,
                                                 color: themeProvider
                                                     .themeManager
@@ -701,14 +701,14 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                                             const SizedBox(width: 10),
                                             Expanded(
                                               child: Button(
-                                                text: 'Apply',
+                                                text: '应用',
                                                 ontap: () {
                                                   if (_rangeDatePickerValueWithDefaultValue
                                                           .length !=
                                                       2) {
                                                     CustomToast().showToast(
                                                         context,
-                                                        'Please select a date range',
+                                                        '请选择日期范围',
                                                         themeProvider,
                                                         toastType:
                                                             ToastType.warning);
@@ -742,7 +742,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                                   : themeProvider
                                       .themeManager.secondaryTextColor,
                             ),
-                            text: 'Custom Date',
+                            text: '自定义日期',
                             selected: customDate,
                             color: customDate
                                 ? themeProvider.themeManager.primaryColour
@@ -782,7 +782,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
               width: MediaQuery.sizeOf(context).width - 40,
               margin: const EdgeInsets.only(bottom: 18),
               child: Button(
-                text: widget.fromCreateView ? 'Add Filter' : 'Apply Filter',
+                text: widget.fromCreateView ? '添加过滤' : '应用过滤',
                 ontap: () {
                   if (widget.fromCreateView) {
                     widget.filtersData["Filters"] = Filters.toJson(filters);

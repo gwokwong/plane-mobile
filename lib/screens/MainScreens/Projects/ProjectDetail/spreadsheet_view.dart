@@ -509,7 +509,7 @@ class _SpreadSheetViewState extends ConsumerState<SpreadSheetView> {
                                     .themeManager.borderSubtle01Color),
                             borderRadius: BorderRadius.circular(5)),
                         child: const CustomText(
-                          'No Label',
+                          '无标签',
                           type: FontStyle.XSmall,
                         ),
                       )
@@ -581,7 +581,7 @@ class _SpreadSheetViewState extends ConsumerState<SpreadSheetView> {
                         issuesProvider.issuesList[index]['start_date'],
                       ),
                     )
-                  : 'No Start Date',
+                  : '无开始时间',
               type: FontStyle.Small,
             ),
           ),

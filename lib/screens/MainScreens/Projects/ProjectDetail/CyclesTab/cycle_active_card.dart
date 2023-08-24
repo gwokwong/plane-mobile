@@ -771,14 +771,14 @@ class _CycleActiveCardState extends ConsumerState<CycleActiveCard> {
                           ['labels'][0]['label_id'] ==
                       null
               ? const CustomText(
-                  'No labels found',
+                  '未发现标签',
                   type: FontStyle.Medium,
                 )
               : cyclesProvider.cyclesActiveData[widget.index]['distribution']
                           ['labels'] ==
                       null
                   ? const CustomText(
-                      'No labels found',
+                      '未发现标签',
                       type: FontStyle.Medium,
                     )
                   : ListView.builder(

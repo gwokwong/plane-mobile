@@ -186,7 +186,7 @@ class _ViewsAndLayoutSheetState extends ConsumerState<ViewsAndLayoutSheet> {
                       : Container(),
                   issueProvider.issues.projectView != ProjectView.spreadsheet
                       ? CustomExpansionTile(
-                          title: 'Group by',
+                          title: '分组',
                           child: Wrap(
                             children: [
                               RadioListTile(
@@ -436,7 +436,7 @@ class _ViewsAndLayoutSheetState extends ConsumerState<ViewsAndLayoutSheet> {
               //expansion tile for issue type having three checkboxes all issues, active issues and backlog issues
               issueProvider.issues.projectView != ProjectView.spreadsheet
                   ? CustomExpansionTile(
-                      title: 'Issue type',
+                      title: '任务类型',
                       child: Wrap(
                         children: [
                           RadioListTile(
@@ -451,7 +451,7 @@ class _ViewsAndLayoutSheetState extends ConsumerState<ViewsAndLayoutSheet> {
                               ),
                               groupValue: issueType,
                               title: const CustomText(
-                                'All issues',
+                                '所有任务',
                                 type: FontStyle.Small,
                                 textAlign: TextAlign.start,
                               ),
@@ -476,7 +476,7 @@ class _ViewsAndLayoutSheetState extends ConsumerState<ViewsAndLayoutSheet> {
                               ),
                               groupValue: issueType,
                               title: const CustomText(
-                                'Active issues',
+                                '活动中的任务',
                                 type: FontStyle.Small,
                                 textAlign: TextAlign.start,
                               ),
@@ -501,7 +501,7 @@ class _ViewsAndLayoutSheetState extends ConsumerState<ViewsAndLayoutSheet> {
                               ),
                               groupValue: issueType,
                               title: const CustomText(
-                                'Backlog issues',
+                                '积压的任务',
                                 type: FontStyle.Small,
                                 textAlign: TextAlign.start,
                               ),
@@ -538,7 +538,7 @@ class _ViewsAndLayoutSheetState extends ConsumerState<ViewsAndLayoutSheet> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 const CustomText(
-                                  'Show empty states',
+                                  '显示空状态',
                                   type: FontStyle.Small,
                                 ),
                                 Container(

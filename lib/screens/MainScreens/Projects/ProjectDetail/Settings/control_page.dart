@@ -21,7 +21,7 @@ class _ControlPageState extends ConsumerState<ControlPage> {
         var projectProvider = ref.read(ProviderList.projectProvider);
         projectProvider.lead.text =
             (projectProvider.projectDetailModel!.projectLead == null
-                ? 'Select lead'
+                ? '选择领导'
                 : projectProvider
                     .projectDetailModel!.projectLead!['first_name']);
         projectProvider.assignee.text =

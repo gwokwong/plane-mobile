@@ -169,7 +169,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
                       : Container(),
                   issueProvider.issues.projectView != ProjectView.spreadsheet
                       ? CustomExpansionTile(
-                          title: 'Group by',
+                          title: '分组',
                           child: Wrap(
                             children: [
                               RadioListTile(
@@ -185,7 +185,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
                                   // dense: true,
                                   groupValue: groupBy,
                                   title: CustomText(
-                                    'State',
+                                    '状态',
                                     type: FontStyle.H6,
                                     color: themeProvider
                                         .themeManager.tertiaryTextColor,
@@ -214,7 +214,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
                                   // dense: true,
                                   groupValue: groupBy,
                                   title: const CustomText(
-                                    'Priority',
+                                    '优先级',
                                     type: FontStyle.Small,
                                     textAlign: TextAlign.start,
                                   ),
@@ -421,7 +421,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
               //expansion tile for issue type having three checkboxes all issues, active issues and backlog issues
               issueProvider.issues.projectView != ProjectView.spreadsheet
                   ? CustomExpansionTile(
-                      title: 'Issue type',
+                      title: '任务类型',
                       child: Wrap(
                         children: [
                           RadioListTile(

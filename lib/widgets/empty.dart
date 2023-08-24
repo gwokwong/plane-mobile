@@ -712,7 +712,7 @@ class EmptyPlaceholder {
           Container(
             padding: const EdgeInsets.only(top: 35),
             child: CustomText(
-              'No labels yet',
+              '暂无标签',
               type: FontStyle.H5,
               fontWeight: FontWeightt.Semibold,
               color: themeProvider.themeManager.primaryTextColor,

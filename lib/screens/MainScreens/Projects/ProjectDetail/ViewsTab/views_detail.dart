@@ -101,7 +101,7 @@ class _ViewsDetailState extends ConsumerState<ViewsDetail> {
                         ),
                         const Spacer(),
                         CustomText(
-                          'Update',
+                          '更新',
                           color: themeProvider.themeManager.primaryColour,
                           fontSize: 17,
                           fontWeight: FontWeightt.Medium,
@@ -125,7 +125,7 @@ class _ViewsDetailState extends ConsumerState<ViewsDetail> {
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               CustomText(
-                                '# Filters : ',
+                                '# 过滤 : ',
                                 color: themeProvider
                                     .themeManager.placeholderTextColor,
                                 fontSize: 17,
@@ -233,7 +233,7 @@ class _ViewsDetailState extends ConsumerState<ViewsDetail> {
                               size: 19,
                             ),
                             CustomText(
-                              ' Layout',
+                              ' 布局',
                               type: FontStyle.Medium,
                               color: Colors.white,
                               overrride: true,
@@ -278,7 +278,7 @@ class _ViewsDetailState extends ConsumerState<ViewsDetail> {
                               size: 19,
                             ),
                             CustomText(
-                              ' Views',
+                              ' 视图',
                               type: FontStyle.Medium,
                               color: Colors.white,
                               overrride: true,
@@ -323,7 +323,7 @@ class _ViewsDetailState extends ConsumerState<ViewsDetail> {
                               size: 19,
                             ),
                             CustomText(
-                              ' Filters',
+                              ' 过滤',
                               type: FontStyle.Medium,
                               color: Colors.white,
                               overrride: true,

@@ -296,7 +296,7 @@ class _LablesPageState extends ConsumerState<LablesPage> {
                                                     width: 10,
                                                   ),
                                                   CustomText(
-                                                    'Delete Label',
+                                                    '删除标签',
                                                     color: themeProvider
                                                         .themeManager
                                                         .secondaryTextColor,

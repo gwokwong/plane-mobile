@@ -501,7 +501,7 @@ class _IssueCardWidgetState extends ConsumerState<IssueCardWidget> {
                                             .themeManager.borderSubtle01Color),
                                     borderRadius: BorderRadius.circular(4)),
                                 child: CustomText(
-                                  'No Label',
+                                  '无标签',
                                   type: FontStyle.XSmall,
                                   color: themeProvider
                                       .themeManager.tertiaryTextColor,

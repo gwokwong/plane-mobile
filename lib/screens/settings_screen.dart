@@ -83,7 +83,7 @@ class _SettingScreenState extends ConsumerState<SettingScreen>
           backgroundColor:
               themeProvider.themeManager.primaryBackgroundDefaultColor,
           title: CustomText(
-            'Settings',
+            '设置',
             type: FontStyle.Large,
             fontWeight: FontWeightt.Semibold,
             maxLines: 1,

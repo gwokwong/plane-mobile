@@ -402,7 +402,7 @@ class _GlobalSearchSheetState extends ConsumerState<GlobalSearchSheet> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CustomText(
-          'Workspace Settings',
+          '工作区设置',
           type: FontStyle.Medium,
           color: themeProvider.themeManager.placeholderTextColor,
         ),

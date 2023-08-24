@@ -150,7 +150,7 @@ class _CreateCycleState extends ConsumerState<CreateCycle> {
                             child: const Row(
                               children: [
                                 CustomText(
-                                  'Start Date ',
+                                  '开始时间 ',
                                   type: FontStyle.Small,
                                 ),
                               ],
