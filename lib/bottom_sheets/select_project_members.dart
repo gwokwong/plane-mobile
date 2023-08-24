@@ -87,7 +87,7 @@ class _SelectProjectMembersState extends ConsumerState<SelectProjectMembers> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         const CustomText(
-                          'Select Members',
+                          '选择成员',
                           type: FontStyle.H4,
                           fontWeight: FontWeightt.Semibold,
                         ),
@@ -324,7 +324,7 @@ class _SelectProjectMembersState extends ConsumerState<SelectProjectMembers> {
                   alignment: Alignment.bottomCenter,
                   height: 50,
                   child: Button(
-                    text: 'Select',
+                    text: '选择',
                     ontap: () {
                       if (!widget.createIssue) {
                         // Navigator.of(context).pop();

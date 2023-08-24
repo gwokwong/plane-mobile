@@ -21,7 +21,7 @@ class ProfileProvider extends ChangeNotifier {
   String? dropDownValue;
   String? slug;
   List<String> dropDownItems = [
-    '创始人或学习小组',
+    '创始人或领导团队',
     '产品经理',
     '设计师',
     '软件开发人员',

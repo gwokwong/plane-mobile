@@ -81,7 +81,7 @@ class _SelectStatesState extends ConsumerState<SelectStates> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       CustomText(
-                        'Select State',
+                        '选择状态',
                         type: FontStyle.H4,
                         fontWeight: FontWeightt.Semibold,
                         color: themeProvider.themeManager.primaryTextColor,
@@ -248,7 +248,7 @@ class _SelectStatesState extends ConsumerState<SelectStates> {
                                   width: 10,
                                 ),
                                 const CustomText(
-                                  'Create New State',
+                                  '创建新的状态',
                                   type: FontStyle.Small,
                                 )
                               ],

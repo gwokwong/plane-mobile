@@ -91,7 +91,7 @@ class _SelectIssuePriorityState extends ConsumerState<SelectIssuePriority> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     const CustomText(
-                      'Select Priority',
+                      '选择优先级',
                       type: FontStyle.H4,
                       fontWeight: FontWeightt.Semibold,
                     ),

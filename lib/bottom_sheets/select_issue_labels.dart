@@ -112,7 +112,7 @@ class _SelectIssueLabelsState extends ConsumerState<SelectIssueLabels> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const CustomText(
-                        'Select Labels',
+                        '选择标签',
                         type: FontStyle.H4,
                         fontWeight: FontWeightt.Semibold,
                       ),
@@ -466,7 +466,7 @@ class _SelectIssueLabelsState extends ConsumerState<SelectIssueLabels> {
                                         )),
                                     Container(width: 10),
                                     const CustomText(
-                                      'Create New Label',
+                                      '创建新的标签',
                                       type: FontStyle.Small,
                                     ),
                                   ],
@@ -588,7 +588,7 @@ class _SelectIssueLabelsState extends ConsumerState<SelectIssueLabels> {
                   margin: const EdgeInsets.only(
                       bottom: 10, top: 10, left: 10, right: 10),
                   child: Button(
-                    text: 'Select Label',
+                    text: '选择标签',
                     ontap: () {
                       if (!widget.createIssue) {
                         Navigator.pop(context);

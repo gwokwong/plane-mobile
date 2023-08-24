@@ -14,7 +14,7 @@ class RoleSheet extends ConsumerStatefulWidget {
 
 class _RoleSheetState extends ConsumerState<RoleSheet> {
   List<String> dropDownItems = [
-    '创始人或学习小组',
+    '创始人或领导团队',
     '产品经理',
     '设计师',
     '软件开发人员',

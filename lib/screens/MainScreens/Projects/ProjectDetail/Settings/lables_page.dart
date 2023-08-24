@@ -675,7 +675,7 @@ class _SingleLabelSelectState extends ConsumerState<SingleLabelSelect> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     const CustomText(
-                      'Select Labels',
+                      '选择标签',
                       type: FontStyle.H6,
                       fontWeight: FontWeightt.Semibold,
                     ),

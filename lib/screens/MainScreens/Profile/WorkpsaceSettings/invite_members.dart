@@ -194,7 +194,7 @@ class _InviteMembersState extends ConsumerState<InviteMembers> {
                             child: Row(
                               children: [
                                 CustomText(
-                                  'Role',
+                                  '角色',
                                   type: FontStyle.Small,
                                   color: themeProvider
                                       .themeManager.tertiaryTextColor,

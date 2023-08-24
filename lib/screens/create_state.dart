@@ -57,7 +57,7 @@ class _CreateStateState extends ConsumerState<CreateState> {
         onPressed: () {
           Navigator.pop(context);
         },
-        text: 'Create State',
+        text: '创建状态',
       ),
       body: LoadingWidget(
         loading: issuesProvider.statesState == StateEnum.loading,
@@ -87,7 +87,7 @@ class _CreateStateState extends ConsumerState<CreateState> {
                         child: Row(
                           children: [
                             CustomText(
-                              'Name ',
+                              '名称 ',
                               color:
                                   themeProvider.themeManager.tertiaryTextColor,
                               type: FontStyle.Small,
@@ -149,7 +149,7 @@ class _CreateStateState extends ConsumerState<CreateState> {
                         child: Row(
                           children: [
                             CustomText(
-                              'State ',
+                              '状态 ',
                               color:
                                   themeProvider.themeManager.tertiaryTextColor,
                               type: FontStyle.Small,
@@ -224,7 +224,7 @@ class _CreateStateState extends ConsumerState<CreateState> {
                         child: Row(
                           children: [
                             CustomText(
-                              'Color ',
+                              '颜色 ',
                               color:
                                   themeProvider.themeManager.tertiaryTextColor,
                               type: FontStyle.Small,
@@ -370,7 +370,7 @@ class _CreateStateState extends ConsumerState<CreateState> {
                         margin:
                             const EdgeInsets.only(top: 20, bottom: 5, left: 15),
                         child: const CustomText(
-                          'Description ',
+                          '描述 ',
                           // color: themeProvider.secondaryTextColor,
                           type: FontStyle.Small,
                         )),
@@ -414,7 +414,7 @@ class _CreateStateState extends ConsumerState<CreateState> {
                     Container(
                       margin: const EdgeInsets.only(left: 15, right: 15),
                       child: Button(
-                          text: 'Create State',
+                          text: '创建状态',
                           ontap: () async {
                             if (!formKey.currentState!.validate()) return;
                             await issuesProvider.createState(

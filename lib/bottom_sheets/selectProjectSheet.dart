@@ -112,7 +112,7 @@ class _SelectProjectState extends ConsumerState<SelectProject> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const CustomText(
-                  'Select Project',
+                  '选择项目',
                   type: FontStyle.H4,
                   fontWeight: FontWeightt.Semibold,
                 ),

@@ -161,7 +161,7 @@ class EmptyPlaceholder {
                   SizedBox(
                     width: 10,
                   ),
-                  CustomText('Add Issues',
+                  CustomText('添加任务',
                       type: FontStyle.Small,
                       fontWeight: FontWeightt.Medium,
                       overrride: true,

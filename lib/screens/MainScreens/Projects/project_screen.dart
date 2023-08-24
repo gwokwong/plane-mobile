@@ -355,7 +355,7 @@ class _ProjectScreenState extends ConsumerState<ProjectScreen> {
                                       checkUnstarredProject(
                                           projects: projectProvider.projects)
                                   ? CustomText(
-                                      'Projects',
+                                      '项目列表',
                                       type: FontStyle.Medium,
                                       fontWeight: FontWeightt.Medium,
                                       color: themeProvider

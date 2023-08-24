@@ -30,7 +30,7 @@ class ProfileScreen extends ConsumerStatefulWidget {
 class _ProfileScreenState extends ConsumerState<ProfileScreen> {
   List menus = [
     {
-      'menu': 'Profile Setttings',
+      'menu': '个人资料设置',
       'items': [
         {
           'title': '通用',
@@ -69,7 +69,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
       ],
     },
     {
-      'menu': 'Workspace Settings',
+      'menu': '工作区设置',
       'items': [
         {
           'title': '通用',

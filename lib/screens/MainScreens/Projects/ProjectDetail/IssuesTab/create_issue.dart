@@ -184,7 +184,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
             ref.read(ProviderList.searchIssueProvider).issues = tempIssues;
             Navigator.pop(context);
           },
-          text: 'Create Issue',
+          text: '创建任务',
         ),
         body: LoadingWidget(
           loading: issuesProvider.createIssueState == StateEnum.loading ||
@@ -231,7 +231,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                 Row(
                                   children: [
                                     CustomText(
-                                      'Project',
+                                      '项目',
                                       type: FontStyle.Medium,
                                       color: themeProvider
                                           .themeManager.primaryTextColor,
@@ -338,7 +338,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                 Row(
                                   children: [
                                     CustomText(
-                                      'Title',
+                                      '标题',
                                       type: FontStyle.Medium,
                                       color: themeProvider
                                           .themeManager.primaryTextColor,
@@ -356,7 +356,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                 TextFormField(
                                   validator: (val) {
                                     if (val!.isEmpty) {
-                                      return '*required';
+                                      return '*必填项';
                                     }
                                     return null;
                                   },
@@ -407,7 +407,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
 
                                 const SizedBox(height: 20),
                                 CustomText(
-                                  'Details',
+                                  '详情',
                                   type: FontStyle.Medium,
                                   color: themeProvider
                                       .themeManager.primaryTextColor,
@@ -457,7 +457,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                           ),
                                           const SizedBox(width: 15),
                                           CustomText(
-                                            'State',
+                                            '状态',
                                             type: FontStyle.Small,
                                             color: themeProvider.themeManager
                                                 .placeholderTextColor,
@@ -484,7 +484,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                                 issuesProvider.createIssuedata[
                                                             'state'] ==
                                                         null
-                                                    ? 'Select'
+                                                    ? '选择'
                                                     : issuesProvider
                                                         .states[issuesProvider
                                                             .createIssuedata[
@@ -568,7 +568,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                           //   ),
                                           // ),
                                           CustomText(
-                                            'Assignees',
+                                            '负责人',
                                             type: FontStyle.Small,
                                             color: themeProvider.themeManager
                                                 .placeholderTextColor,
@@ -580,7 +580,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                               ? Row(
                                                   children: [
                                                     const CustomText(
-                                                      'Select',
+                                                      '选择',
                                                       type: FontStyle.Small,
                                                     ),
                                                     const SizedBox(
@@ -726,7 +726,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                           //   ),
                                           // ),
                                           CustomText(
-                                            'Priority',
+                                            '优先级',
                                             type: FontStyle.Small,
                                             color: themeProvider.themeManager
                                                 .placeholderTextColor,
@@ -738,7 +738,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                               ? Row(
                                                   children: [
                                                     CustomText(
-                                                      'Select',
+                                                      '选择',
                                                       type: FontStyle.Small,
                                                       color: themeProvider
                                                           .themeManager
@@ -1046,7 +1046,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                                 //   ),
                                                 // ),
                                                 CustomText(
-                                                  'Label',
+                                                  '标签',
                                                   type: FontStyle.Small,
                                                   color: themeProvider
                                                       .themeManager
@@ -1059,7 +1059,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                                     ? Row(
                                                         children: [
                                                           CustomText(
-                                                            'Select',
+                                                            '选择',
                                                             type:
                                                                 FontStyle.Small,
                                                             color: themeProvider
@@ -1215,7 +1215,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                                 ),
                                                 const SizedBox(width: 15),
                                                 CustomText(
-                                                  'Start Date',
+                                                  '开始时间',
                                                   type: FontStyle.Small,
                                                   color: themeProvider
                                                       .themeManager
@@ -1228,7 +1228,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                                     ? Row(
                                                         children: [
                                                           CustomText(
-                                                            'Select',
+                                                            '选择',
                                                             type:
                                                                 FontStyle.Small,
                                                             color: themeProvider
@@ -1374,7 +1374,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                                 ),
                                                 const SizedBox(width: 15),
                                                 CustomText(
-                                                  'Due Date',
+                                                  '结束时间',
                                                   type: FontStyle.Small,
                                                   color: themeProvider
                                                       .themeManager
@@ -1387,7 +1387,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                                     ? Row(
                                                         children: [
                                                           CustomText(
-                                                            'Select',
+                                                            '选择',
                                                             type:
                                                                 FontStyle.Small,
                                                             color: themeProvider
@@ -1502,7 +1502,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                                 ),
                                                 const SizedBox(width: 15),
                                                 CustomText(
-                                                  'Parent',
+                                                  '父任务',
                                                   type: FontStyle.Small,
                                                   color: themeProvider
                                                       .themeManager
@@ -1514,7 +1514,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                                     ? Row(
                                                         children: [
                                                           CustomText(
-                                                            'Select issue',
+                                                            '选择任务',
                                                             type:
                                                                 FontStyle.Small,
                                                             color: themeProvider
@@ -1605,7 +1605,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                         //   ),
                                         // ),
                                         CustomText(
-                                          expanded ? "View less" : 'View all',
+                                          expanded ? "收起更多" : '查看全部',
                                           type: FontStyle.Small,
                                           color: themeProvider
                                               .themeManager.primaryColour,
@@ -1658,7 +1658,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                       margin: const EdgeInsets.symmetric(
                           vertical: 20, horizontal: 16),
                       child: Button(
-                        text: 'Create Issue',
+                        text: '创建任务',
                         ontap: () async {
                           if (!formKey.currentState!.validate()) return;
 
@@ -1693,7 +1693,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                           )
                               .then((_) {
                             notificationsServices.sendNotification(
-                                'Plane', 'Issue Created Successfully');
+                                'Mission Plan', '任务创建成功');
                           });
 
                           // if (widget.moduleId != null) {

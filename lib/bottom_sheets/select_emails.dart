@@ -49,7 +49,7 @@ class _SelectEmailsState extends ConsumerState<SelectEmails> {
                 child: Row(
                   children: [
                     const CustomText(
-                      'Select Member',
+                      '选择成员',
                       type: FontStyle.H6,
                       fontWeight: FontWeightt.Semibold,
                     ),

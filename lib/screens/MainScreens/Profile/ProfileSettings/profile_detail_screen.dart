@@ -30,12 +30,12 @@ class _ProfileDetailScreenState extends ConsumerState<ProfileDetailScreen> {
 
   String? dropDownValue;
   List<String> dropDownItems = [
-    'Founder or Leadership team',
-    'Product Manager',
-    'Designer',
-    'Software Developer',
-    'Freelancer',
-    'Other'
+    '创始人或领导团队',
+    '产品经理',
+    '设计师',
+    '软件开发人员',
+    '自由职业者',
+    '其他'
   ];
   String theme = 'Light';
   List<String> themes = ['Light', 'Dark'];
@@ -64,7 +64,7 @@ class _ProfileDetailScreenState extends ConsumerState<ProfileDetailScreen> {
         onPressed: () {
           Navigator.pop(context);
         },
-        text: 'General',
+        text: '通用',
       ),
       body: LoadingWidget(
         loading: profileProvider.updateProfileState == StateEnum.loading,
@@ -182,7 +182,7 @@ class _ProfileDetailScreenState extends ConsumerState<ProfileDetailScreen> {
                                       width: 5,
                                     ),
                                     CustomText(
-                                      'Upload',
+                                      '上传',
                                       type: FontStyle.Medium,
                                       fontWeight: FontWeightt.Bold,
                                       color: themeProvider
@@ -236,7 +236,7 @@ class _ProfileDetailScreenState extends ConsumerState<ProfileDetailScreen> {
                       Container(
                         margin: const EdgeInsets.symmetric(horizontal: 20),
                         child: CustomText(
-                          'Full Name *',
+                          '全名 *',
                           type: FontStyle.Medium,
                           color: themeProvider.themeManager.tertiaryTextColor,
                         ),
@@ -262,7 +262,7 @@ class _ProfileDetailScreenState extends ConsumerState<ProfileDetailScreen> {
                       Container(
                         margin: const EdgeInsets.symmetric(horizontal: 20),
                         child: CustomText(
-                          'Email *',
+                          '电子邮箱 *',
                           type: FontStyle.Medium,
                           color: themeProvider.themeManager.tertiaryTextColor,
                         ),
@@ -288,7 +288,7 @@ class _ProfileDetailScreenState extends ConsumerState<ProfileDetailScreen> {
                       ),
                       Container(
                         margin: const EdgeInsets.symmetric(horizontal: 20),
-                        child: CustomText('Role *',
+                        child: CustomText('角色 *',
                             type: FontStyle.Medium,
                             color:
                                 themeProvider.themeManager.tertiaryTextColor),
@@ -359,7 +359,7 @@ class _ProfileDetailScreenState extends ConsumerState<ProfileDetailScreen> {
                       // const Text('Theme', style: TextStylingWidget.description),
                       Container(
                         margin: const EdgeInsets.symmetric(horizontal: 20),
-                        child: CustomText('Theme',
+                        child: CustomText('主题',
                             type: FontStyle.Medium,
                             color:
                                 themeProvider.themeManager.tertiaryTextColor),
@@ -456,7 +456,7 @@ class _ProfileDetailScreenState extends ConsumerState<ProfileDetailScreen> {
                         if (fileUploadProvider.downloadUrl != null)
                           "avatar": fileUploadProvider.downloadUrl
                       }),
-                      text: 'Update',
+                      text: '更新',
                     ),
                   ),
                 ],

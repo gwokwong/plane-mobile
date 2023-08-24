@@ -57,7 +57,7 @@ class _ActivityState extends ConsumerState<Activity> {
                         Expanded(
                           child: activityProvider.data.isEmpty
                               ? const Center(
-                                  child: CustomText('No Activity'),
+                                  child: CustomText('无动态'),
                                 )
                               : ListView.builder(
                                   primary: false,

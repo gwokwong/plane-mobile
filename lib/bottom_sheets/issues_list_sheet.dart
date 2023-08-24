@@ -486,7 +486,7 @@ class _IssuesListSheetState extends ConsumerState<IssuesListSheet> {
                                 }
                                 Navigator.of(context).pop();
                               },
-                              text: 'Add issues',
+                              text: '添加任务',
                             ),
                           )
                         : Container()
