@@ -46,7 +46,7 @@ class _TypeSheetState extends ConsumerState<TypeSheet> {
               Row(
                 children: [
                   const CustomText(
-                    'Layout',
+                    '布局',
                     type: FontStyle.H4,
                     fontWeight: FontWeightt.Semibold,
                   ),
@@ -142,7 +142,7 @@ class _TypeSheetState extends ConsumerState<TypeSheet> {
                           }),
                       const SizedBox(width: 10),
                       const CustomText(
-                        'Board View',
+                        '板面视图',
                         type: FontStyle.H6,
                         //color: themeProvider.themeManager.tertiaryTextColor,
                       ),
@@ -185,7 +185,7 @@ class _TypeSheetState extends ConsumerState<TypeSheet> {
                           onChanged: (val) {}),
                       const SizedBox(width: 10),
                       const CustomText(
-                        'List View',
+                        '列表视图',
                         type: FontStyle.H6,
                         //color: themeProvider.themeManager.tertiaryTextColor,
                       ),
@@ -234,7 +234,7 @@ class _TypeSheetState extends ConsumerState<TypeSheet> {
                                 onChanged: (val) {}),
                             const SizedBox(width: 10),
                             const CustomText(
-                              'Calendar View',
+                              '日历视图',
                               type: FontStyle.H6,
                               //color:themeProvider.themeManager.tertiaryTextColor,
                             ),
@@ -283,7 +283,7 @@ class _TypeSheetState extends ConsumerState<TypeSheet> {
                                 onChanged: (val) {}),
                             const SizedBox(width: 10),
                             const CustomText(
-                              'Spreadsheet View',
+                              '电子表格视图',
                               type: FontStyle.H6,
                               //color:themeProvider.themeManager.tertiaryTextColor,
                             ),
@@ -297,7 +297,7 @@ class _TypeSheetState extends ConsumerState<TypeSheet> {
           Container(
             margin: const EdgeInsets.only(bottom: 18, top: 20),
             child: Button(
-              text: 'Apply Filter',
+              text: '应用过滤',
               ontap: () {
                 if (widget.issueCategory == IssueCategory.myIssues) {
                   if (selected == 0) {
