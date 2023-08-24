@@ -382,7 +382,7 @@ class _SelectCoverImageState extends ConsumerState<SelectCoverImage> {
                                         width: 10,
                                       ),
                                       const CustomText(
-                                        'Upload',
+                                        '上传',
                                         type: FontStyle.Small,
                                         color: Colors.black,
                                       ),
@@ -428,7 +428,7 @@ class _SelectCoverImageState extends ConsumerState<SelectCoverImage> {
                                 margin: const EdgeInsets.symmetric(
                                     vertical: 15, horizontal: 10),
                                 child: Button(
-                                  text: 'UPLOAD',
+                                  text: '上传',
                                   ontap: () async {
                                     int sizeOfImage = coverImage!
                                         .readAsBytesSync()
@@ -437,7 +437,7 @@ class _SelectCoverImageState extends ConsumerState<SelectCoverImage> {
                                     if (sizeOfImage > 5000000) {
                                       CustomToast().showToast(
                                           context,
-                                          'File size should be less than 5MB',
+                                          '文件大小应小于 5MB',
                                           themeProvider,
                                           toastType: ToastType.warning);
                                       return;

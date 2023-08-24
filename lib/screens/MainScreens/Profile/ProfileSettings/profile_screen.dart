@@ -33,7 +33,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
       'menu': '个人资料设置',
       'items': [
         {
-          'title': '通用',
+          'title': '概况',
           'icon': Icons.person_outline,
           'onTap': (context) {
             Navigator.push(
@@ -72,7 +72,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
       'menu': '工作区设置',
       'items': [
         {
-          'title': '通用',
+          'title': '概况',
           'icon': Icons.workspaces_outline,
           'onTap': (context) {
             Navigator.push(

@@ -66,7 +66,7 @@ class _MembersState extends ConsumerState<Members> {
                     Icons.add,
                     color: Color.fromRGBO(63, 118, 255, 1),
                   ),
-                  CustomText('Add',
+                  CustomText('添加',
                       type: FontStyle.Small,
                       color: Color.fromRGBO(63, 118, 255, 1)),
                 ],
@@ -366,7 +366,7 @@ class _ProjectMembersWidgetState extends ConsumerState<ProjectMembersWidget> {
             } else if (projectsProvider.projectMembers[index]['member']["id"] ==
                 ref.read(ProviderList.profileProvider).userProfile.id) {
               CustomToast().showToast(
-                  context, "You can't change your own role", themeProvider,
+                  context, "你无法改变自己的角色", themeProvider,
                   toastType: ToastType.warning);
             }
             // if ((ref.watch(ProviderList.profileProvider).userProfile.id ==
@@ -481,7 +481,7 @@ class _ProjectMembersWidgetState extends ConsumerState<ProjectMembersWidget> {
                       ["id"] ==
                   ref.read(ProviderList.profileProvider).userProfile.id) {
                 CustomToast().showToast(
-                    context, "You can't change your own role", themeProvider,
+                    context, "你无法改变自己的角色", themeProvider,
                     toastType: ToastType.warning);
               } else {
                 // if (projectsProvider.role == Role.admin) {

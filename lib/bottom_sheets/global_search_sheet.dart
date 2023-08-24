@@ -370,32 +370,32 @@ class _GlobalSearchSheetState extends ConsumerState<GlobalSearchSheet> {
     var themeProvider = ref.watch(ProviderList.themeProvider);
     List items = [
       {
-        'title': 'General',
+        'title': '概况',
         'screen': const WorkspaceGeneral(),
         'icon': 'assets/images/global_search_icons/general.png'
       },
       {
-        'title': 'Members',
+        'title': '成员',
         'screen': const Members(
           fromWorkspace: true,
         ),
         'icon': 'assets/images/global_search_icons/members.png'
       },
-      {
-        'title': 'Billing & Plans',
-        'screen': const BillingPlans(),
-        'icon': 'assets/images/global_search_icons/billing&plans.png'
-      },
-      {
-        'title': 'Integrations',
-        'screen': const Integrations(),
-        'icon': 'assets/images/global_search_icons/integrations.png'
-      },
-      {
-        'title': 'Imports & Exports',
-        'screen': const ImportEport(),
-        'icon': 'assets/images/global_search_icons/imports&exports.png'
-      },
+      // {
+      //   'title': 'Billing & Plans',
+      //   'screen': const BillingPlans(),
+      //   'icon': 'assets/images/global_search_icons/billing&plans.png'
+      // },
+      // {
+      //   'title': 'Integrations',
+      //   'screen': const Integrations(),
+      //   'icon': 'assets/images/global_search_icons/integrations.png'
+      // },
+      // {
+      //   'title': 'Imports & Exports',
+      //   'screen': const ImportEport(),
+      //   'icon': 'assets/images/global_search_icons/imports&exports.png'
+      // },
     ];
 
     return Column(

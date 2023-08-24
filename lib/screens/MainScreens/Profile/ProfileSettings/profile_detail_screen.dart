@@ -64,7 +64,7 @@ class _ProfileDetailScreenState extends ConsumerState<ProfileDetailScreen> {
         onPressed: () {
           Navigator.pop(context);
         },
-        text: '通用',
+        text: '概况',
       ),
       body: LoadingWidget(
         loading: profileProvider.updateProfileState == StateEnum.loading,

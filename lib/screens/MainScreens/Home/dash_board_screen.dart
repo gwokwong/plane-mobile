@@ -256,7 +256,7 @@ class _DashBoardScreenState extends ConsumerState<DashBoardScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const CustomText(
-                          'Create a project',
+                          '创建项目',
                           type: FontStyle.H5,
                           fontWeight: FontWeightt.Semibold,
                         ),

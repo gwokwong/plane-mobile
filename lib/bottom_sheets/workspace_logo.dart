@@ -76,7 +76,7 @@ class _WorkspaceLogoState extends ConsumerState<WorkspaceLogo> {
                             width: 10,
                           ),
                           const CustomText(
-                            'Upload',
+                            '上传',
                             type: FontStyle.Small,
                             color: Colors.black,
                           ),
@@ -115,14 +115,14 @@ class _WorkspaceLogoState extends ConsumerState<WorkspaceLogo> {
                     height: 20,
                   ),
                   Button(
-                    text: 'UPLOAD',
+                    text: '上传',
                     ontap: () async {
                       int sizeOfImage =
                           coverImage!.readAsBytesSync().lengthInBytes;
 
                       if (sizeOfImage > 5000000) {
                         CustomToast().showToast(
-                            context, 'file exceeding 5MB', themeProvider,
+                            context, '文件超过5MB', themeProvider,
                             toastType: ToastType.warning);
                         return;
                       }

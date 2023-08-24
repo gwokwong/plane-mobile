@@ -49,7 +49,7 @@ class _InviteMembersState extends ConsumerState<InviteMembers> {
         onPressed: () {
           Navigator.of(context).pop();
         },
-        text: 'Invite Members',
+        text: '邀请成员',
       ),
       body: LoadingWidget(
         loading: !widget.isProject
@@ -80,7 +80,7 @@ class _InviteMembersState extends ConsumerState<InviteMembers> {
                                 left: 20, right: 20, top: 20, bottom: 5),
                             child: Row(
                               children: [
-                                CustomText('Email',
+                                CustomText('电子邮箱',
                                     type: FontStyle.Small,
                                     color: themeProvider
                                         .themeManager.tertiaryTextColor),
@@ -101,11 +101,11 @@ class _InviteMembersState extends ConsumerState<InviteMembers> {
                                 child: TextFormField(
                                     validator: (value) {
                                       if (value!.isEmpty) {
-                                        return 'Please enter email';
+                                        return '请输入电子邮箱';
                                       } else if (!RegExp(
                                               r'^.+@[a-zA-Z]+\.{1}[a-zA-Z]+(\.{0,1}[a-zA-Z]+)$')
                                           .hasMatch(value)) {
-                                        return 'Please enter valid email';
+                                        return '请输入有效的电子邮箱';
                                       }
                                       return null;
                                     },
@@ -132,7 +132,7 @@ class _InviteMembersState extends ConsumerState<InviteMembers> {
                                 child: DropdownButtonFormField(
                                     validator: (value) {
                                       if (value == null) {
-                                        return 'Please select an email';
+                                        return '请选择电子邮箱';
                                       }
                                       return null;
                                     },
@@ -223,7 +223,7 @@ class _InviteMembersState extends ConsumerState<InviteMembers> {
                                 builder: (ctx) {
                                   return const MemberStatus(
                                     fromWorkspace: true,
-                                    firstName: 'Set Role',
+                                    firstName: '设置角色',
                                     lastName: '',
                                     role: {'role': 10},
                                     userId: '',
@@ -249,7 +249,7 @@ class _InviteMembersState extends ConsumerState<InviteMembers> {
                                     builder: (ctx) {
                                       return const MemberStatus(
                                         fromWorkspace: true,
-                                        firstName: 'Set Role',
+                                        firstName: '设置角色',
                                         lastName: '',
                                         role: {'role': 10},
                                         userId: '',
@@ -344,7 +344,7 @@ class _InviteMembersState extends ConsumerState<InviteMembers> {
                             margin: const EdgeInsets.only(
                                 left: 20, right: 20, top: 20, bottom: 5),
                             child: CustomText(
-                              'Message ',
+                              '信息 ',
                               type: FontStyle.Small,
                               color:
                                   themeProvider.themeManager.tertiaryTextColor,
@@ -440,7 +440,7 @@ class _InviteMembersState extends ConsumerState<InviteMembers> {
                           ScaffoldMessenger.of(context)
                               .showSnackBar(const SnackBar(
                             content: CustomText(
-                              'Invitation sent successfully',
+                              '邀请已成功发送',
                               type: FontStyle.Medium,
                               color: Colors.white,
                             ),
@@ -455,7 +455,7 @@ class _InviteMembersState extends ConsumerState<InviteMembers> {
                           ScaffoldMessenger.of(context)
                               .showSnackBar(const SnackBar(
                             content: CustomText(
-                              'Invitation sent successfully',
+                              '邀请已成功发送',
                               type: FontStyle.Medium,
                               color: Colors.white,
                             ),
@@ -463,7 +463,7 @@ class _InviteMembersState extends ConsumerState<InviteMembers> {
                           ));
                         }
                       },
-                      text: 'Invite',
+                      text: '邀请',
                     ),
                   )
                 ],

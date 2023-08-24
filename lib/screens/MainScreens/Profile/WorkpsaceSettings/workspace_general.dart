@@ -74,7 +74,7 @@ class _WorkspaceGeneralState extends ConsumerState<WorkspaceGeneral> {
                 logo: workspaceProvider.selectedWorkspace!.workspaceLogo);
             Navigator.of(context).pop();
           },
-          text: 'Workspace General',
+          text: '工作区概况',
         ),
         body: LoadingWidget(
           loading: workspaceProvider.updateWorkspaceState == StateEnum.loading,
@@ -132,7 +132,7 @@ class _WorkspaceGeneralState extends ConsumerState<WorkspaceGeneral> {
                               workspaceProvider.role != Role.member) {
                             CustomToast().showToast(
                                 context,
-                                'You are not allowed to change the logo',
+                                '不允许修改logo',
                                 themeProvider,
                                 toastType: ToastType.warning);
                             return;
@@ -180,7 +180,7 @@ class _WorkspaceGeneralState extends ConsumerState<WorkspaceGeneral> {
                                 ),
                                 const SizedBox(width: 5),
                                 const CustomText(
-                                  'Upload',
+                                  '上传',
                                   type: FontStyle.Small,
                                 ),
                               ],
@@ -193,7 +193,7 @@ class _WorkspaceGeneralState extends ConsumerState<WorkspaceGeneral> {
                                     workspaceProvider.role != Role.member) {
                                   CustomToast().showToast(
                                       context,
-                                      'You are not allowed to change the logo',
+                                      '不允许更改logo',
                                       themeProvider,
                                       toastType: ToastType.warning);
                                   return;
@@ -228,7 +228,7 @@ class _WorkspaceGeneralState extends ConsumerState<WorkspaceGeneral> {
                     child: const Row(
                       children: [
                         CustomText(
-                          'Workspace Name ',
+                          '工作区名称 ',
                           type: FontStyle.Small,
                         ),
                         CustomText(
@@ -257,7 +257,7 @@ class _WorkspaceGeneralState extends ConsumerState<WorkspaceGeneral> {
                     child: const Row(
                       children: [
                         CustomText(
-                          'Workspace URL ',
+                          '工作区网址 ',
                           type: FontStyle.Small,
                         ),
                         CustomText(
@@ -293,7 +293,7 @@ class _WorkspaceGeneralState extends ConsumerState<WorkspaceGeneral> {
                     child: const Row(
                       children: [
                         CustomText(
-                          'Company Size ',
+                          '公司规模 ',
                           type: FontStyle.Small,
                         ),
                         CustomText(
@@ -397,7 +397,7 @@ class _WorkspaceGeneralState extends ConsumerState<WorkspaceGeneral> {
                           margin: const EdgeInsets.only(left: 16),
                           child: CustomText(
                             workspaceProvider.companySize == ''
-                                ? 'Select Company Size'
+                                ? '选择公司规模'
                                 : workspaceProvider.companySize,
                             type: FontStyle.Small,
                           ),
@@ -425,7 +425,7 @@ class _WorkspaceGeneralState extends ConsumerState<WorkspaceGeneral> {
                     if (workspaceProvider.updateWorkspaceState ==
                         StateEnum.success) {
                       CustomToast().showToast(context,
-                          'Workspace updated successfully', themeProvider,
+                          '工作区更新成功', themeProvider,
                           toastType: ToastType.success);
                     }
                     if (workspaceProvider.updateWorkspaceState ==
@@ -449,7 +449,7 @@ class _WorkspaceGeneralState extends ConsumerState<WorkspaceGeneral> {
                       ),
                       child: const Center(
                           child: CustomText(
-                        'Update',
+                        '更新',
                         color: Colors.white,
                         type: FontStyle.Medium,
                         fontWeight: FontWeightt.Bold,
@@ -473,14 +473,14 @@ class _WorkspaceGeneralState extends ConsumerState<WorkspaceGeneral> {
                     collapsedBackgroundColor:
                         const Color.fromRGBO(255, 12, 12, 0.1),
                     title: const CustomText(
-                      'Danger Zone',
+                      '危险区域',
                       textAlign: TextAlign.left,
                       type: FontStyle.H5,
                       color: Color.fromRGBO(255, 12, 12, 1),
                     ),
                     children: [
                       const CustomText(
-                        'The danger zone of the workspace delete page is a critical area that requires careful consideration and attention. When deleting a workspace, all of the data and resources within that workspace will be permanently removed and cannot be recovered.',
+                        '工作区删除页面的危险区域是需要仔细考虑和注意的关键区域。删除工作区时，该工作区中的所有数据和资源将被永久删除，且无法恢复。',
                         type: FontStyle.Medium,
                         maxLines: 8,
                         textAlign: TextAlign.left,
@@ -522,7 +522,7 @@ class _WorkspaceGeneralState extends ConsumerState<WorkspaceGeneral> {
                             ),
                             child: const Center(
                                 child: CustomText(
-                              'Delete Workspace',
+                              '删除工作区',
                               color: Colors.white,
                               type: FontStyle.Medium,
                               fontWeight: FontWeightt.Bold,

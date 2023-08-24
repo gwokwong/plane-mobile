@@ -62,7 +62,7 @@ class _PrefrencesScreenState extends ConsumerState<PrefrencesScreen> {
     return Scaffold(
       appBar: CustomAppBar(
           textColor: themeProvider.themeManager.primaryTextColor,
-          text: 'Preferences',
+          text: '偏好',
           onPressed: () => Navigator.pop(context)),
       body: SafeArea(
         child: Container(
@@ -100,7 +100,7 @@ class _PrefrencesScreenState extends ConsumerState<PrefrencesScreen> {
                                       borderRadius: BorderRadius.circular(4),
                                     ),
                                     child: bottomBar(
-                                        text: 'System Preference',
+                                        text: '系统偏好',
                                         circleBorder: themeProvider
                                             .themeManager.borderSubtle01Color,
                                         borderColor: themeProvider
@@ -142,7 +142,7 @@ class _PrefrencesScreenState extends ConsumerState<PrefrencesScreen> {
                                       borderRadius: BorderRadius.circular(4),
                                     ),
                                     child: bottomBar(
-                                        text: 'Custom Theme',
+                                        text: '自定义主题',
                                         circleBorder: themeProvider
                                             .themeManager.borderSubtle01Color,
                                         borderColor: themeProvider
@@ -191,7 +191,7 @@ class _PrefrencesScreenState extends ConsumerState<PrefrencesScreen> {
                             borderRadius: BorderRadius.circular(4),
                           ),
                           child: bottomBar(
-                              text: index == 0 ? 'Light Mode' : 'Dark Mode',
+                              text: index == 0 ? '浅色' : '深色',
                               circleBorder: index == 0
                                   ? themeProvider
                                       .themeManager.borderStrong01Color
@@ -247,8 +247,8 @@ class _PrefrencesScreenState extends ConsumerState<PrefrencesScreen> {
                           ),
                           child: bottomBar(
                               text: index == 0
-                                  ? 'Light High Contast'
-                                  : 'Dark High Contast',
+                                  ? '浅色高对比度'
+                                  : '深色高对比度',
                               circleBorder: index == 0
                                   ? Colors.black
                                   : themeProvider

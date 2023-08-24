@@ -53,7 +53,7 @@ class _CustomThemeState extends ConsumerState<CustomTheme> {
     return Scaffold(
       appBar: CustomAppBar(
           textColor: themeProvider.themeManager.primaryTextColor,
-          text: 'Custom Theme',
+          text: '自定义主题',
           onPressed: () => Navigator.pop(context)),
       body: Stack(
         children: [
@@ -136,7 +136,7 @@ class _CustomThemeState extends ConsumerState<CustomTheme> {
                       padding: const EdgeInsets.only(
                           left: 20, right: 20, bottom: 20),
                       child: Button(
-                        text: 'Set Theme',
+                        text: '设置主题',
                         ontap: () {
                           if (!formkey.currentState!.validate()) {
                             return;

@@ -30,7 +30,7 @@ class SettingScreen extends ConsumerStatefulWidget {
 class _SettingScreenState extends ConsumerState<SettingScreen>
     with TickerProviderStateMixin {
   List<String> tabs = [
-    '通用',
+    '概况',
     '控制',
     '成员',
     '功能',
