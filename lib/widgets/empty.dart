@@ -314,7 +314,7 @@ class EmptyPlaceholder {
           Container(
             padding: const EdgeInsets.only(top: 35),
             child: CustomText(
-              'Notifications',
+              '通知',
               type: FontStyle.H5,
               fontWeight: FontWeightt.Semibold,
               color: themeProvider.themeManager.primaryTextColor,
@@ -324,7 +324,7 @@ class EmptyPlaceholder {
             width: 300,
             padding: const EdgeInsets.only(top: 10),
             child: const CustomText(
-              "You're updated with all the notifications",
+              "您将收到所有最新通知",
               color: Color.fromRGBO(133, 142, 150, 1),
               textAlign: TextAlign.center,
               type: FontStyle.Small,

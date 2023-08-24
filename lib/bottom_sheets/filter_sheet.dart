@@ -27,11 +27,11 @@ class FilterSheet extends ConsumerStatefulWidget {
 
 class _FilterSheetState extends ConsumerState<FilterSheet> {
   List priorities = [
-    {'icon': Icons.error_outline_rounded, 'text': 'urgent'},
-    {'icon': Icons.signal_cellular_alt, 'text': 'high'},
-    {'icon': Icons.signal_cellular_alt_2_bar, 'text': 'medium'},
-    {'icon': Icons.signal_cellular_alt_1_bar, 'text': 'low'},
-    {'icon': Icons.do_disturb_alt_outlined, 'text': 'null'}
+    {'icon': Icons.error_outline_rounded, 'text': 'urgent','title': '紧急'},
+    {'icon': Icons.signal_cellular_alt, 'text': 'high','title': '高'},
+    {'icon': Icons.signal_cellular_alt_2_bar, 'text': 'medium','title': '中'},
+    {'icon': Icons.signal_cellular_alt_1_bar, 'text': 'low','title': '低'},
+    {'icon': Icons.do_disturb_alt_outlined, 'text': 'null','title': '无'}
   ];
 
   List states = [
@@ -190,7 +190,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
               child: Wrap(
                 children: [
                   CustomExpansionTile(
-                    title: 'Priority',
+                    title: '优先级',
                     child: Wrap(
                         children: priorities
                             .map((e) => GestureDetector(
@@ -231,7 +231,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                   horizontalLine(),
 
                   CustomExpansionTile(
-                    title: 'State',
+                    title: '状态',
                     child: Wrap(
                         children: (widget.issueCategory ==
                                     IssueCategory.myIssues
@@ -302,7 +302,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                   widget.issueCategory == IssueCategory.myIssues
                       ? Container()
                       : CustomExpansionTile(
-                          title: 'Assignees',
+                          title: '负责人',
                           child: Wrap(
                             children: projectProvider.projectMembers
                                 .map(
@@ -368,7 +368,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                   widget.issueCategory == IssueCategory.myIssues
                       ? Container()
                       : CustomExpansionTile(
-                          title: 'Created by',
+                          title: '创建人',
                           child: Wrap(
                             children: projectProvider.projectMembers
                                 .map(
@@ -430,7 +430,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                   horizontalLine(),
 
                   CustomExpansionTile(
-                    title: 'Labels',
+                    title: '标签',
                     child: Wrap(
                         children: (widget.issueCategory ==
                                     IssueCategory.myIssues
@@ -471,7 +471,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
 
                   //due date\
                   CustomExpansionTile(
-                    title: 'Due Date',
+                    title: '到期时间',
                     child: Wrap(
                       children: [
                         GestureDetector(
@@ -528,7 +528,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                                   : themeProvider
                                       .themeManager.placeholderTextColor,
                             ),
-                            text: '2 Weeks from now',
+                            text: '2 周后',
                             selected: twoWeeks,
                             color: twoWeeks
                                 ? themeProvider.themeManager.primaryColour
@@ -560,7 +560,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                                   : themeProvider
                                       .themeManager.placeholderTextColor,
                             ),
-                            text: '1 Month from now',
+                            text: '1个月后',
                             selected: oneMonth,
                             color: oneMonth
                                 ? themeProvider.themeManager.primaryColour
@@ -591,7 +591,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                                   : themeProvider
                                       .themeManager.placeholderTextColor,
                             ),
-                            text: '2 Months from now',
+                            text: '2个月后',
                             selected: twoMonths,
                             color: twoMonths
                                 ? themeProvider.themeManager.primaryColour

@@ -24,22 +24,27 @@ class _SelectIssuePriorityState extends ConsumerState<SelectIssuePriority> {
     {
       'name': 'Urgent',
       'icon': const Icon(Icons.error_outline_rounded),
+      'title': '紧急',
     },
     {
       'name': 'High',
       'icon': const Icon(Icons.signal_cellular_alt_outlined),
+      'title': '高',
     },
     {
       'name': 'Medium',
       'icon': const Icon(Icons.signal_cellular_alt_2_bar_outlined),
+      'title': '中',
     },
     {
       'name': 'Low',
       'icon': const Icon(Icons.signal_cellular_alt_1_bar_outlined),
+      'title': '低',
     },
     {
       'name': 'None',
       'icon': const Icon(Icons.block),
+      'title': '无',
     }
   ];
 
@@ -144,15 +149,9 @@ class _SelectIssuePriorityState extends ConsumerState<SelectIssuePriority> {
                                     issueID: widget.issueId!,
                                     data: index != 4
                                         ? {
-                                            "priority": priorities[index]
-                                                    ['name']
-                                                .toString()
-                                                .replaceAll(
-                                                    priorities[index]['name']
-                                                        .toString()[0],
-                                                    priorities[index]['name']
-                                                        .toString()[0]
-                                                        .toLowerCase())
+                                            "priority": priorities[index]['name'].toString()
+                                                .replaceAll(priorities[index]['name'].toString()[0],
+                                                    priorities[index]['name'].toString()[0].toLowerCase())
                                           }
                                         : {"priority": null})
                                 .then((value) {
@@ -213,7 +212,7 @@ class _SelectIssuePriorityState extends ConsumerState<SelectIssuePriority> {
                                     width: 10,
                                   ),
                                   CustomText(
-                                      priorities[index]['name'].toString(),
+                                      priorities[index]['title'].toString(),
                                       type: FontStyle.Medium,
                                       fontWeight: FontWeightt.Regular,
                                       color: themeProvider

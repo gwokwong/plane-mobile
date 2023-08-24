@@ -181,7 +181,7 @@ class _NotifiactionScreenState extends ConsumerState<NotifiactionScreen> {
                             Container(
                               margin: const EdgeInsets.symmetric(vertical: 10),
                               child: CustomText(
-                                'My Issues',
+                                '我的任务',
                                 color: selected == 0
                                     ? themeProvider.themeManager.primaryColour
                                     : themeProvider
@@ -236,7 +236,7 @@ class _NotifiactionScreenState extends ConsumerState<NotifiactionScreen> {
                               margin: const EdgeInsets.symmetric(vertical: 10),
                               child: CustomText(
                                 overrride: true,
-                                'Created',
+                                '我创建的',
                                 color: selected == 1
                                     ? themeProvider.themeManager.primaryColour
                                     : themeProvider
@@ -290,7 +290,7 @@ class _NotifiactionScreenState extends ConsumerState<NotifiactionScreen> {
                               margin: const EdgeInsets.symmetric(vertical: 10),
                               child: CustomText(
                                 overrride: true,
-                                'Subscribed',
+                                '已订阅',
                                 color: selected == 2
                                     ? themeProvider.themeManager.primaryColour
                                     : themeProvider
