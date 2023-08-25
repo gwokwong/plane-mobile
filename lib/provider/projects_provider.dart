@@ -41,11 +41,11 @@ class ProjectsProvider extends ChangeNotifier {
   TextEditingController assignee = TextEditingController();
 
   List features = [
-    {'title': 'Issues', 'width': 60, 'show': true},
-    {'title': 'Cycles', 'width': 60, 'show': true},
-    {'title': 'Modules', 'width': 75, 'show': true},
-    {'title': 'Views', 'width': 60, 'show': true},
-    {'title': 'Pages', 'width': 50, 'show': true},
+    {'title': '任务', 'width': 60, 'show': true},
+    {'title': '周期', 'width': 60, 'show': true},
+    {'title': '模块', 'width': 75, 'show': true},
+    {'title': '视图', 'width': 60, 'show': true},
+    {'title': '页面', 'width': 50, 'show': true},
   ];
 
   void clear() {

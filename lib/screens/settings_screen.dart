@@ -36,8 +36,8 @@ class _SettingScreenState extends ConsumerState<SettingScreen>
     '功能',
     '状态',
     '标签',
-    'Integrations',
-    'Estimates',
+    // 'Integrations',
+    // 'Estimates',
   ];
 
   var pageViewController = PageController(initialPage: 0);

@@ -70,6 +70,8 @@ class _ProjectDetailState extends ConsumerState<ProjectDetail> {
 
   @override
   Widget build(BuildContext context) {
+
+
     var themeProvider = ref.watch(ProviderList.themeProvider);
     var issueProvider = ref.watch(ProviderList.issuesProvider);
     var projectProvider = ref.watch(ProviderList.projectProvider);
@@ -85,6 +87,7 @@ class _ProjectDetailState extends ConsumerState<ProjectDetail> {
         onPressed: () {
           Navigator.pop(context);
         },
+        
         text: ref.read(ProviderList.projectProvider).currentProject['name'],
         actions: [
           projectProvider.role == Role.admin ||

@@ -22,7 +22,7 @@ class CreatePage extends ConsumerWidget {
         onPressed: () {
           Navigator.pop(context);
         },
-        text: 'Create Page',
+        text: '创建页面',
       ),
       body: LayoutBuilder(builder: (context, constraints) {
         return LoadingWidget(

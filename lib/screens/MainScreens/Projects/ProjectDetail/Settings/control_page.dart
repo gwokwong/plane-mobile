@@ -21,12 +21,12 @@ class _ControlPageState extends ConsumerState<ControlPage> {
         var projectProvider = ref.read(ProviderList.projectProvider);
         projectProvider.lead.text =
             (projectProvider.projectDetailModel!.projectLead == null
-                ? '选择领导'
+                ? '选择负责人'
                 : projectProvider
                     .projectDetailModel!.projectLead!['first_name']);
         projectProvider.assignee.text =
             projectProvider.projectDetailModel!.defaultAssignee == null
-                ? 'Select Assingnee'
+                ? '选择负责人'
                 : projectProvider
                     .projectDetailModel!.defaultAssignee!['first_name'];
       },
@@ -47,7 +47,7 @@ class _ControlPageState extends ConsumerState<ControlPage> {
             Row(
               children: [
                 CustomText(
-                  'Project Lead',
+                  '项目负责人',
                   type: FontStyle.Small,
                   color: themeProvider.themeManager.tertiaryTextColor,
                 ),
@@ -75,7 +75,7 @@ class _ControlPageState extends ConsumerState<ControlPage> {
                   context: context,
                   builder: (ctx) {
                     return ProjectLeadAssigneeSheet(
-                      title: 'Lead ',
+                      title: '负责人 ',
                       leadId: projectProvider.projectDetailModel!.projectLead !=
                               null
                           ? projectProvider
@@ -126,7 +126,7 @@ class _ControlPageState extends ConsumerState<ControlPage> {
             Row(
               children: [
                 CustomText(
-                  'Default Assignee ',
+                  '默认负责人  ',
                   type: FontStyle.Small,
                   color: themeProvider.themeManager.tertiaryTextColor,
                 ),
@@ -180,7 +180,7 @@ class _ControlPageState extends ConsumerState<ControlPage> {
                   context: context,
                   builder: (ctx) {
                     return ProjectLeadAssigneeSheet(
-                      title: 'Assignee',
+                      title: '负责人',
                       assigneId:
                           projectProvider.projectDetailModel!.defaultAssignee !=
                                   null

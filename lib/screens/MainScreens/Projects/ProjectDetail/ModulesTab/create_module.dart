@@ -52,7 +52,7 @@ class _CreateModuleState extends ConsumerState<CreateModule> {
               modulesProvider.createModule = {};
               Navigator.pop(context);
             },
-            text: 'Create Module',
+            text: '创建模块',
           ),
           backgroundColor:
               themeProvider.themeManager.primaryBackgroundDefaultColor,

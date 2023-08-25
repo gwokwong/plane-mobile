@@ -60,7 +60,7 @@ class _LabelSheetState extends ConsumerState<LabelSheet> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const CustomText(
-                    'Add Label',
+                    '添加标签',
                     type: FontStyle.H6,
                     fontWeight: FontWeightt.Semibold,
                   ),
@@ -177,7 +177,7 @@ class _LabelSheetState extends ConsumerState<LabelSheet> {
                   // ignore: use_build_context_synchronously
                   Navigator.pop(context);
                 },
-                text: 'Add Labels',
+                text: '添加标签',
               ),
               Container(height: 20),
             ]),

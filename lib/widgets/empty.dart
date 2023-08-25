@@ -75,7 +75,7 @@ class EmptyPlaceholder {
                     width: 10,
                   ),
                   CustomText(
-                    '添加新周期',
+                    '添加周期',
                     type: FontStyle.Small,
                     fontWeight: FontWeightt.Medium,
                     color: Colors.white,
@@ -240,7 +240,7 @@ class EmptyPlaceholder {
           Container(
             padding: const EdgeInsets.only(top: 35),
             child: CustomText(
-              'Modules',
+              '模块',
               type: FontStyle.H5,
               fontWeight: FontWeightt.Semibold,
               color: themeProvider.themeManager.primaryTextColor,
@@ -250,7 +250,7 @@ class EmptyPlaceholder {
             width: 300,
             padding: const EdgeInsets.only(top: 10),
             child: CustomText(
-              'Modules are smaller, focused projects that help you group and organize issues within a specific time frame.',
+              '模块是规模较小、重点突出的项目，可帮助您在特定时间范围内对任务进行分组和整理。',
               color: themeProvider.themeManager.placeholderTextColor,
               textAlign: TextAlign.center,
               type: FontStyle.Small,
@@ -284,7 +284,7 @@ class EmptyPlaceholder {
                   SizedBox(
                     width: 10,
                   ),
-                  CustomText('Add Module',
+                  CustomText('添加模块',
                       type: FontStyle.Small,
                       fontWeight: FontWeightt.Medium,
                       overrride: true,
@@ -362,7 +362,7 @@ class EmptyPlaceholder {
             width: 300,
             padding: const EdgeInsets.only(top: 10),
             child: CustomText(
-              'Create and document issues effortlessly in one place with Plane Notes, AI-powered for ease.',
+              '使用 Plan Notes，在一个地方轻松创建和记录问题。',
               color: themeProvider.themeManager.placeholderTextColor,
               maxLines: 3,
               textAlign: TextAlign.center,
@@ -722,7 +722,7 @@ class EmptyPlaceholder {
             width: 300,
             padding: const EdgeInsets.only(top: 10),
             child: CustomText(
-              'Create labels to help organize and filter issues in you project',
+              '创建标签，帮助整理和过滤项目中的任务',
               color: themeProvider.themeManager.placeholderTextColor,
               textAlign: TextAlign.center,
               type: FontStyle.Small,
@@ -775,7 +775,7 @@ class EmptyPlaceholder {
                   SizedBox(
                     width: 10,
                   ),
-                  CustomText('Add Label',
+                  CustomText('添加标签',
                       type: FontStyle.Small,
                       overrride: true,
                       fontWeight: FontWeightt.Medium,

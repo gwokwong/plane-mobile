@@ -78,7 +78,7 @@ class _CreateViewState extends ConsumerState<CreateView> {
         onPressed: () {
           Navigator.pop(context);
         },
-        text: 'Create View',
+        text: '创建视图',
       ),
       body: LoadingWidget(
         loading: viewsProvider.viewsState == StateEnum.loading,
@@ -100,7 +100,7 @@ class _CreateViewState extends ConsumerState<CreateView> {
                             Row(
                               children: [
                                 CustomText(
-                                  'Title ',
+                                  '标题 ',
                                   color: themeProvider
                                       .themeManager.tertiaryTextColor,
                                   type: FontStyle.Small,

@@ -205,7 +205,7 @@ class _PageDetailState extends ConsumerState<PageDetail> {
                                       ),
                                     ),
                                     CustomText(
-                                      'Add Labels',
+                                      '添加标签',
                                       type: FontStyle.Small,
                                       color: themeProvider
                                           .themeManager.secondaryTextColor,

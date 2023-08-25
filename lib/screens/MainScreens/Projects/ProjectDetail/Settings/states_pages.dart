@@ -478,8 +478,8 @@ class _AddUpdateStateState extends ConsumerState<AddUpdateState> {
                 ),
                 Button(
                   text: widget.method == CRUD.create
-                      ? 'Add State'
-                      : 'Update State',
+                      ? '添加状态'
+                      : '更新状态',
                   ontap: () async {
                     if (nameController.text.isNotEmpty) {
                       await projectProvider.stateCrud(

@@ -185,6 +185,9 @@ class _IssueCardWidgetState extends ConsumerState<IssueCardWidget> {
     } else {
       provider = ref.watch(ProviderList.issuesProvider);
     }
+
+
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -525,7 +528,7 @@ class _IssueCardWidgetState extends ConsumerState<IssueCardWidget> {
                             child: CustomText(
                               provider.issuesResponse[widget.cardIndex]
                                       ['start_date'] ??
-                                  'Start date',
+                                  '开始日期',
                               type: FontStyle.XSmall,
                               color:
                                   themeProvider.themeManager.tertiaryTextColor,
@@ -546,7 +549,7 @@ class _IssueCardWidgetState extends ConsumerState<IssueCardWidget> {
                             child: CustomText(
                               provider.issuesResponse[widget.cardIndex]
                                       ['target_date'] ??
-                                  'Due date',
+                                  '结束时间',
                               type: FontStyle.XSmall,
                               color:
                                   themeProvider.themeManager.tertiaryTextColor,

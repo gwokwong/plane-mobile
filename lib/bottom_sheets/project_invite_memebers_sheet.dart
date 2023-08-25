@@ -68,7 +68,7 @@ class _ProjectInviteMembersSheetState
                       child: Row(
                         children: [
                           const CustomText(
-                            'Invite Members',
+                            '邀请成员',
                             type: FontStyle.H6,
                             fontWeight: FontWeightt.Semibold,
                           ),
@@ -97,7 +97,7 @@ class _ProjectInviteMembersSheetState
                             child: const Row(
                               children: [
                                 CustomText(
-                                  'Email',
+                                  '电子邮箱',
                                   type: FontStyle.Small,
                                 ),
                                 CustomText(
@@ -174,7 +174,7 @@ class _ProjectInviteMembersSheetState
                                   margin: const EdgeInsets.only(
                                       left: 20, right: 20, bottom: 5),
                                   child: const CustomText(
-                                    '*required',
+                                    '*必填项',
                                     type: FontStyle.Small,
                                     fontSize: 14,
                                     color: Colors.red,
@@ -187,7 +187,7 @@ class _ProjectInviteMembersSheetState
                               child: const Row(
                                 children: [
                                   CustomText(
-                                    'Role',
+                                    '角色',
                                     type: FontStyle.Small,
                                   ),
                                   CustomText(
@@ -213,7 +213,7 @@ class _ProjectInviteMembersSheetState
                                   builder: (ctx) {
                                     return MemberStatus(
                                       fromWorkspace: true,
-                                      firstName: 'Set User',
+                                      firstName: '设置用户',
                                       lastName: '',
                                       role: selectedRole,
                                       userId: '',
@@ -248,7 +248,7 @@ class _ProjectInviteMembersSheetState
                               margin: const EdgeInsets.only(
                                   left: 20, right: 20, top: 20, bottom: 5),
                               child: const CustomText(
-                                'Message ',
+                                '信息 ',
                                 type: FontStyle.Small,
                               )),
                           Container(
@@ -325,7 +325,7 @@ class _ProjectInviteMembersSheetState
                             );
                           } else {}
                         },
-                        text: 'Invite',
+                        text: '邀请',
                       ),
                     )
                   ],

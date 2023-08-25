@@ -74,8 +74,8 @@ class _CreateLabelState extends ConsumerState<CreateLabel> {
                         children: [
                           CustomText(
                             widget.method == CRUD.update
-                                ? ' Edit Label'
-                                : 'Add Label',
+                                ? ' 编辑标签'
+                                : '添加标签',
                             type: FontStyle.H6,
                             fontWeight: FontWeightt.Semibold,
                             fontSize: 22,
@@ -96,7 +96,7 @@ class _CreateLabelState extends ConsumerState<CreateLabel> {
                         height: 20,
                       ),
                       const CustomText(
-                        'Color',
+                        '颜色',
                         type: FontStyle.Small,
                       ),
                       Container(
@@ -168,7 +168,7 @@ class _CreateLabelState extends ConsumerState<CreateLabel> {
                       ),
                       const CustomRichText(
                         widgets: [
-                          TextSpan(text: 'Title'),
+                          TextSpan(text: '标题'),
                           TextSpan(
                             text: '*',
                             style: TextStyle(
@@ -193,8 +193,8 @@ class _CreateLabelState extends ConsumerState<CreateLabel> {
                   ),
                   Button(
                     text: widget.method == CRUD.update
-                        ? 'Update Label'
-                        : 'Add Label',
+                        ? '更新标签'
+                        : '添加标签',
                     ontap: () {
                       issuesProvider.issueLabels(
                           slug: ref
