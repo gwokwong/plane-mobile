@@ -630,7 +630,7 @@ class _GeneralPageState extends ConsumerState<GeneralPage> {
                   ),
                   const SizedBox(height: 30),
                   Button(
-                    text: 'Update Project',
+                    text: '更新项目',
                     ontap: () async {
                       // log(identifier.text +
                       //     " " +

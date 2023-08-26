@@ -339,7 +339,7 @@ class _AddUpdateStateState extends ConsumerState<AddUpdateState> {
                       height: 20,
                     ),
                     const CustomText(
-                      'Color',
+                      '颜色',
                       type: FontStyle.Small,
                     ),
                     Container(
@@ -407,7 +407,7 @@ class _AddUpdateStateState extends ConsumerState<AddUpdateState> {
                       height: 15,
                     ),
                     const CustomText(
-                      'Name *',
+                      '名称 *',
                       type: FontStyle.Small,
                     ),
                     Container(
@@ -424,7 +424,7 @@ class _AddUpdateStateState extends ConsumerState<AddUpdateState> {
                     widget.method == CRUD.create
                         ? Container()
                         : const CustomText(
-                            'State *',
+                            '状态 *',
                             type: FontStyle.Small,
                           ),
                     widget.method == CRUD.create

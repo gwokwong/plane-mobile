@@ -249,8 +249,8 @@ class _LablesPageState extends ConsumerState<LablesPage> {
                                                   ),
                                                   CustomText(
                                                     isChildAvail
-                                                        ? 'Add more labels'
-                                                        : 'Convert to group',
+                                                        ? '添加更多标签'
+                                                        : '转换为分组',
                                                     color: themeProvider
                                                         .themeManager
                                                         .secondaryTextColor,
@@ -273,7 +273,7 @@ class _LablesPageState extends ConsumerState<LablesPage> {
                                                     width: 10,
                                                   ),
                                                   CustomText(
-                                                    'Edit Label',
+                                                    '编辑标签',
                                                     color: themeProvider
                                                         .themeManager
                                                         .secondaryTextColor,

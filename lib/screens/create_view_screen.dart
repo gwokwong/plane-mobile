@@ -121,7 +121,7 @@ class _CreateViewState extends ConsumerState<CreateView> {
                             const SizedBox(height: 20),
 
                             CustomText(
-                              'Description',
+                              '描述',
                               type: FontStyle.Small,
                               color:
                                   themeProvider.themeManager.tertiaryTextColor,
@@ -185,7 +185,7 @@ class _CreateViewState extends ConsumerState<CreateView> {
                                     ),
                                     const SizedBox(width: 10),
                                     CustomText(
-                                      'Add Filter',
+                                      '添加过滤',
                                       type: FontStyle.Small,
                                       color: themeProvider
                                           .themeManager.tertiaryTextColor,
@@ -391,7 +391,7 @@ class _CreateViewState extends ConsumerState<CreateView> {
                         margin: const EdgeInsets.symmetric(
                             vertical: 20, horizontal: 20),
                         child: Button(
-                          text: 'Create View',
+                          text: '创建视图',
                           ontap: () async {
                             try {
                               setState(() {
