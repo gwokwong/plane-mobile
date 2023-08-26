@@ -119,7 +119,6 @@ class EmptyPlaceholder {
             child: CustomText(
               //create issues text
               '任务可以帮助你跟踪单个工作。有了"任务"，你就可以跟踪正在进行的工作、谁在处理以及完成了哪些工作。',
-
               color: themeProvider.themeManager.placeholderTextColor,
               textAlign: TextAlign.center,
               type: FontStyle.Small,
@@ -209,7 +208,7 @@ class EmptyPlaceholder {
                         SizedBox(
                           width: 10,
                         ),
-                        CustomText('Add Existing Issues',
+                        CustomText('添加已有任务',
                             type: FontStyle.Small,
                             fontWeight: FontWeightt.Medium,
                             overrride: true,
@@ -478,7 +477,7 @@ class EmptyPlaceholder {
           Container(
             padding: const EdgeInsets.only(top: 35),
             child: CustomText(
-              'Views',
+              '视图',
               type: FontStyle.H5,
               fontWeight: FontWeightt.Semibold,
               color: themeProvider.themeManager.primaryTextColor,
@@ -488,7 +487,7 @@ class EmptyPlaceholder {
             width: 300,
             padding: const EdgeInsets.only(top: 10),
             child: CustomText(
-              'Views aid in saving your issues by applying various filters and grouping options.',
+              '视图通过应用各种筛选器和分组选项来帮助保存任务。',
               textAlign: TextAlign.center,
               type: FontStyle.Small,
               color: themeProvider.themeManager.placeholderTextColor,

@@ -111,6 +111,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
         Icons.remove_circle_outline_rounded,
         color: themeProvider.themeManager.placeholderTextColor,
       ),
+      'title': '无',
     };
     prov.createIssuedata['members'] = null;
     prov.createIssuedata['labels'] = null;
@@ -766,7 +767,7 @@ class _CreateIssueState extends ConsumerState<CreateIssue> {
                                                     CustomText(
                                                       issuesProvider
                                                               .createIssuedata[
-                                                          'priority']['name'],
+                                                          'priority']['title'],
                                                       type: FontStyle.Small,
                                                       color: themeProvider
                                                           .themeManager

@@ -47,7 +47,7 @@ class _CreateCycleState extends ConsumerState<CreateCycle> {
         onPressed: () {
           Navigator.pop(context);
         },
-        text: 'Create Cycle',
+        text: '创建周期',
       ),
       backgroundColor: themeProvider.themeManager.primaryBackgroundDefaultColor,
       body: LoadingWidget(
@@ -75,7 +75,7 @@ class _CreateCycleState extends ConsumerState<CreateCycle> {
                             child: const Row(
                               children: [
                                 CustomText(
-                                  'Cycle Title ',
+                                  '周期标题 ',
                                   type: FontStyle.Small,
                                   fontWeight: FontWeightt.Regular,
                                 ),
@@ -219,7 +219,7 @@ class _CreateCycleState extends ConsumerState<CreateCycle> {
                             child: const Row(
                               children: [
                                 CustomText(
-                                  'End Date ',
+                                  '结束时间 ',
                                   // color: themeProvider.secondaryTextColor,
                                   type: FontStyle.Small,
                                 ),
@@ -292,7 +292,7 @@ class _CreateCycleState extends ConsumerState<CreateCycle> {
                     margin: const EdgeInsets.symmetric(
                         vertical: 20, horizontal: 16),
                     child: Button(
-                      text: 'Create Cycle',
+                      text: '创建周期',
                       ontap: () async {
                         if (formKey.currentState!.validate()) {
                           cyclesProvider.cyclesState = StateEnum.loading;

@@ -513,7 +513,7 @@ class _ProjectScreenState extends ConsumerState<ProjectScreen> {
                                                 projectProvider.projects[index]
                                                         ['is_member']
                                                     ? '成员'
-                                                    : 'Not a Member',
+                                                    : '非成员',
                                                 // color: themeProvider.strokeColor,
                                                 type: FontStyle.Medium,
                                                 fontWeight: FontWeightt.Medium,
@@ -539,7 +539,7 @@ class _ProjectScreenState extends ConsumerState<ProjectScreen> {
                                               //   ),
                                               // ),
                                               CustomText(
-                                                DateFormat('d MMMM').format(
+                                                DateFormat('MM-dd').format(
                                                     DateTime.parse(
                                                         projectProvider
                                                                 .projects[index]

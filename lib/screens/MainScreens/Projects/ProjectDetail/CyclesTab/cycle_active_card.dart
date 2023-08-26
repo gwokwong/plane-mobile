@@ -92,7 +92,7 @@ class _CycleActiveCardState extends ConsumerState<CycleActiveCard> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const CustomText(
-                    'Progress',
+                    '进展情况',
                     type: FontStyle.Medium,
                     fontWeight: FontWeightt.Medium,
                   ),
@@ -122,7 +122,7 @@ class _CycleActiveCardState extends ConsumerState<CycleActiveCard> {
               title: const Align(
                   alignment: Alignment.centerLeft,
                   child: CustomText(
-                    'Assignees',
+                    '负责人',
                     type: FontStyle.Medium,
                     fontWeight: FontWeightt.Medium,
                   )),
@@ -143,7 +143,7 @@ class _CycleActiveCardState extends ConsumerState<CycleActiveCard> {
               title: const Align(
                   alignment: Alignment.centerLeft,
                   child: CustomText(
-                    'Lables',
+                    '标签',
                     type: FontStyle.Medium,
                     fontWeight: FontWeightt.Medium,
                   )),

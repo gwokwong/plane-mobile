@@ -294,7 +294,7 @@ class _CycleDetailState extends ConsumerState<CycleDetail> {
                                     const EdgeInsets.symmetric(vertical: 10),
                                 child: CustomText(
                                   overrride: true,
-                                  'Issues',
+                                  '任务',
                                   // color: selected == 0
                                   //     ? primaryColor
                                   // : themeProvider.strokeColor,
@@ -380,7 +380,7 @@ class _CycleDetailState extends ConsumerState<CycleDetail> {
                               Padding(
                                 padding:
                                     const EdgeInsets.symmetric(vertical: 10),
-                                child: CustomText('Details',
+                                child: CustomText('详情',
                                     overrride: true,
                                     // color: selected == 1
                                     //     ? primaryColor
@@ -1278,7 +1278,7 @@ class _CycleDetailState extends ConsumerState<CycleDetail> {
         Align(
             alignment: Alignment.centerLeft,
             child: CustomText(
-              'Details',
+              '详情',
               type: FontStyle.Medium,
               fontWeight: FontWeightt.Medium,
               color: themeProvider.themeManager.primaryTextColor,
@@ -1307,7 +1307,7 @@ class _CycleDetailState extends ConsumerState<CycleDetail> {
         Align(
             alignment: Alignment.centerLeft,
             child: CustomText(
-              'Progress',
+              '进展情况',
               type: FontStyle.Medium,
               fontWeight: FontWeightt.Medium,
               color: themeProvider.themeManager.primaryTextColor,
@@ -1390,7 +1390,7 @@ class _CycleDetailState extends ConsumerState<CycleDetail> {
         Align(
             alignment: Alignment.centerLeft,
             child: CustomText(
-              'Assignees',
+              '负责人',
               type: FontStyle.Medium,
               fontWeight: FontWeightt.Medium,
               color: themeProvider.themeManager.primaryTextColor,
@@ -1400,7 +1400,7 @@ class _CycleDetailState extends ConsumerState<CycleDetail> {
                 (detailData['distribution']['assignees'].length == 1 &&
                     detailData['distribution']['assignees'][0]['assignee_id'] ==
                         null)
-            ? const CustomText('No data found.')
+            ? const CustomText('未发现数据')
             : Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 8),
                 decoration: BoxDecoration(
@@ -1606,7 +1606,7 @@ class _CycleDetailState extends ConsumerState<CycleDetail> {
         Align(
             alignment: Alignment.centerLeft,
             child: CustomText(
-              'States',
+              '状态',
               type: FontStyle.Medium,
               fontWeight: FontWeightt.Medium,
               color: themeProvider.themeManager.primaryTextColor,
@@ -1707,7 +1707,7 @@ class _CycleDetailState extends ConsumerState<CycleDetail> {
         Align(
             alignment: Alignment.centerLeft,
             child: CustomText(
-              'Labels',
+              '标签',
               type: FontStyle.Medium,
               fontWeight: FontWeightt.Medium,
               color: themeProvider.themeManager.primaryTextColor,
@@ -1717,7 +1717,7 @@ class _CycleDetailState extends ConsumerState<CycleDetail> {
                 detailData['distribution']['labels'][0]['label_id'] == null
             ? const Align(
                 alignment: Alignment.center,
-                child: CustomText('No data found'),
+                child: CustomText('未发现数据'),
               )
             : detailData['distribution']['labels'].isNotEmpty
                 ? Container(
@@ -1892,7 +1892,7 @@ class _CycleDetailState extends ConsumerState<CycleDetail> {
                   )
                 : const Align(
                     alignment: Alignment.center,
-                    child: CustomText('No data found'),
+                    child: CustomText('未发现数据'),
                   )
       ],
     );
@@ -1923,7 +1923,7 @@ class _CycleDetailState extends ConsumerState<CycleDetail> {
                 color: themeProvider.themeManager.placeholderTextColor),
             const SizedBox(width: 15),
             CustomText(
-              'Progress',
+              '进展情况',
               type: FontStyle.Medium,
               fontWeight: FontWeightt.Regular,
               color: themeProvider.themeManager.placeholderTextColor,
@@ -1976,7 +1976,7 @@ class _CycleDetailState extends ConsumerState<CycleDetail> {
             //   ),
             // ),
             CustomText(
-              'Members',
+              '成员',
               type: FontStyle.Medium,
               fontWeight: FontWeightt.Regular,
               color: themeProvider.themeManager.placeholderTextColor,
@@ -1998,7 +1998,7 @@ class _CycleDetailState extends ConsumerState<CycleDetail> {
                     ? Row(
                         children: [
                           CustomText(
-                            'No members',
+                            '无成员',
                             type: FontStyle.Medium,
                             fontWeight: FontWeightt.Regular,
                             color: themeProvider.themeManager.primaryTextColor,
@@ -2106,7 +2106,7 @@ class _CycleDetailState extends ConsumerState<CycleDetail> {
             ),
             const SizedBox(width: 15),
             CustomText(
-              'Lead',
+              '负责人',
               type: FontStyle.Medium,
               fontWeight: FontWeightt.Regular,
               color: themeProvider.themeManager.placeholderTextColor,

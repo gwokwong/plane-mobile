@@ -214,9 +214,9 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                                               : themeProvider.themeManager
                                                   .secondaryTextColor,
                                     ),
-                                    text: e['text'] == 'null'
-                                        ? 'None'
-                                        : e['text'],
+                                    text: e['title'] == 'null'
+                                        ? '无'
+                                        : e['title'],
                                     color: filters.priorities
                                             .contains(e['text'])
                                         ? themeProvider
@@ -497,7 +497,7 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
                                   : themeProvider
                                       .themeManager.placeholderTextColor,
                             ),
-                            text: 'Last Week',
+                            text: '上周',
                             selected: lastWeek,
                             color: lastWeek
                                 ? themeProvider.themeManager.primaryColour
