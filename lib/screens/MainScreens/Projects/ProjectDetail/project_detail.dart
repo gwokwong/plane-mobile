@@ -421,7 +421,7 @@ class _ProjectDetailState extends ConsumerState<ProjectDetail> {
                                                         size: 19,
                                                       ),
                                                       CustomText(
-                                                        ' 字段',
+                                                        ' 视图',
                                                         type: FontStyle.Medium,
                                                         color: Colors.white,
                                                         overrride: true,

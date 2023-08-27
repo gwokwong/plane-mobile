@@ -522,15 +522,15 @@ class _ProjectMembersWidgetState extends ConsumerState<ProjectMembersWidget> {
                     child: SizedBox(
                       child: CustomText(
                         projectsProvider.projectMembers[index]['role'] == 20
-                            ? 'Admin'
+                            ? '管理员'
                             : projectsProvider.projectMembers[index]['role'] ==
                                     15
-                                ? 'Member'
+                                ? '成员'
                                 : projectsProvider.projectMembers[index]
                                             ['role'] ==
                                         10
-                                    ? 'Viewer'
-                                    : 'Guest',
+                                    ? '查看者'
+                                    : '访客',
                         type: FontStyle.Medium,
                         fontWeight: FontWeightt.Medium,
                         color: themeProvider.isDarkThemeEnabled

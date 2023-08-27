@@ -346,7 +346,7 @@ class _ViewsAndLayoutSheetState extends ConsumerState<ViewsAndLayoutSheet> {
               //expansion tile for order by having two checkboxes last created and last updated
               issueProvider.issues.projectView != ProjectView.spreadsheet
                   ? CustomExpansionTile(
-                      title: 'Order by',
+                      title: '排序',
                       child: Wrap(
                         children: [
                           RadioListTile(
@@ -863,7 +863,7 @@ class _ViewsAndLayoutSheetState extends ConsumerState<ViewsAndLayoutSheet> {
               Container(
                 margin: const EdgeInsets.only(bottom: 20, top: 30),
                 child: Button(
-                  text: 'Apply Filter',
+                  text: '应用过滤',
                   ontap: () async {
                     if (orderBy == '' &&
                         groupBy == '' &&

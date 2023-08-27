@@ -27,54 +27,67 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
     {
       'name': 'Assignee',
       'selected': false,
+      'title': '负责人',
     },
     {
       'name': 'ID',
       'selected': false,
+      'title': 'ID',
     },
     {
       'name': 'Due Date',
       'selected': false,
+      'title': '结束时间',
     },
     {
       'name': 'Label',
       'selected': false,
+      'title': '标签',
     },
     {
       'name': 'Priority',
       'selected': false,
+      'title': '优先级',
     },
     {
       'name': 'State',
       'selected': false,
+      'title': '状态',
     },
     {
       'name': 'Sub Issue Count',
       'selected': false,
+      'title': '子任务数',
     },
     {
       'name': 'Attachment Count',
       'selected': false,
+      'title': '附件数',
     },
     {
       'name': 'Link',
       'selected': false,
+      'title': '链接',
     },
     {
       'name': 'Estimate',
       'selected': false,
+      'title': '估算',
     },
     {
       'name': 'Created on',
       'selected': false,
+      'title': '创建时间',
     },
     {
       'name': 'Updated on',
       'selected': false,
+      'title': '更新时间',
     },
     {
       'name': 'Start Date',
       'selected': false,
+      'title': '开始时间',
     }
   ];
 
@@ -241,7 +254,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
                                   // dense: true,
                                   groupValue: groupBy,
                                   title: const CustomText(
-                                    'Labels',
+                                    '标签',
                                     type: FontStyle.Small,
                                     textAlign: TextAlign.start,
                                   ),
@@ -271,7 +284,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
                                       // dense: true,
                                       groupValue: groupBy,
                                       title: const CustomText(
-                                        'Created by',
+                                        '创建人',
                                         type: FontStyle.Small,
                                         textAlign: TextAlign.start,
                                       ),
@@ -331,7 +344,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
               //expansion tile for order by having two checkboxes last created and last updated
               issueProvider.issues.projectView != ProjectView.spreadsheet
                   ? CustomExpansionTile(
-                      title: 'Order by',
+                      title: '排序',
                       child: Wrap(
                         children: [
                           RadioListTile(
@@ -346,7 +359,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
                               ),
                               groupValue: orderBy,
                               title: const CustomText(
-                                'Manual',
+                                '手工',
                                 type: FontStyle.Small,
                                 textAlign: TextAlign.start,
                               ),
@@ -371,7 +384,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
                               ),
                               groupValue: orderBy,
                               title: const CustomText(
-                                'Last created',
+                                '最新创建',
                                 type: FontStyle.Small,
                                 textAlign: TextAlign.start,
                               ),
@@ -396,7 +409,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
                               ),
                               groupValue: orderBy,
                               title: const CustomText(
-                                'Last updated',
+                                '最近更新',
                                 type: FontStyle.Small,
                                 textAlign: TextAlign.start,
                               ),
@@ -436,7 +449,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
                               ),
                               groupValue: issueType,
                               title: const CustomText(
-                                'All issues',
+                                '全部任务',
                                 type: FontStyle.Small,
                                 textAlign: TextAlign.start,
                               ),
@@ -461,7 +474,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
                               ),
                               groupValue: issueType,
                               title: const CustomText(
-                                'Active issues',
+                                '活动中的任务',
                                 type: FontStyle.Small,
                                 textAlign: TextAlign.start,
                               ),
@@ -486,7 +499,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
                               ),
                               groupValue: issueType,
                               title: const CustomText(
-                                'Backlog issues',
+                                '积压任务',
                                 type: FontStyle.Small,
                                 textAlign: TextAlign.start,
                               ),
@@ -523,7 +536,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 const CustomText(
-                                  'Show empty states',
+                                  '显示空状态',
                                   type: FontStyle.Small,
                                 ),
                                 Container(
@@ -570,7 +583,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
 
               Container(height: 15),
 
-              const CustomText('Display Properties',
+              const CustomText('显示属性',
                   type: FontStyle.Small,
                   fontWeight: FontWeightt.Semibold,
                   textAlign: TextAlign.start),
@@ -621,7 +634,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
                                                 .borderSubtle01Color,
                                       ),
                                     ),
-                                    child: CustomText(tag['name'],
+                                    child: CustomText(tag['title'],
                                         type: FontStyle.Medium,
                                         overrride: true,
                                         color: tag['selected'] ?? false
@@ -634,7 +647,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
               Container(
                 margin: const EdgeInsets.only(bottom: 20, top: 30),
                 child: Button(
-                  text: 'Apply Filter',
+                  text: '应用过滤',
                   ontap: () async {
                     if (orderBy == '' &&
                         groupBy == '' &&
@@ -645,7 +658,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
                         SnackBar(
                           backgroundColor: Colors.red[400],
                           content: const Text(
-                            'Please select atleast one filter',
+                            '请至少选择一个过滤器',
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
@@ -787,7 +800,7 @@ class _ViewsSheetState extends ConsumerState<ViewsSheet> {
             child: Row(
               children: [
                 const CustomText(
-                  'Views',
+                  '视图',
                   type: FontStyle.H4,
                   fontWeight: FontWeightt.Semibold,
                 ),

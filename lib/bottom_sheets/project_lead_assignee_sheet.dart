@@ -53,7 +53,7 @@ class _ProjectLeadAssigneeSheetState
                   Row(
                     children: [
                       CustomText(
-                        'Select ${widget.title}',
+                        '选择${widget.title}',
                         type: FontStyle.H6,
                         fontWeight: FontWeightt.Semibold,
                         color: themeProvider.themeManager.primaryTextColor,

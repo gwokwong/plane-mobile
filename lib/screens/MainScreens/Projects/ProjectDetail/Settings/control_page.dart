@@ -126,7 +126,7 @@ class _ControlPageState extends ConsumerState<ControlPage> {
             Row(
               children: [
                 CustomText(
-                  '默认负责人  ',
+                  '默认负责人',
                   type: FontStyle.Small,
                   color: themeProvider.themeManager.tertiaryTextColor,
                 ),

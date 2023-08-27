@@ -16,15 +16,15 @@ class FeaturesPage extends ConsumerStatefulWidget {
 class _FeaturesPageState extends ConsumerState<FeaturesPage> {
   List cardData = [
     {
-      'title': 'Cycles',
+      'title': '周期',
       'description':
-          'Cycles are enabled for all the projects in this workspace. Access them from the sidebar.',
+          '该工作区中的所有项目都启用了周期。从侧边栏访问它们。',
       'switched': false
     },
     {
-      'title': 'Modules',
+      'title': '模块',
       'description':
-          'Modules are enabled for all the projects in this workspace. Access it from the sidebar.',
+          '该工作区中的所有项目都启用了模块。从侧边栏进入。',
       'switched': false
     },
     // {

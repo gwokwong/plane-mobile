@@ -318,8 +318,8 @@ class _AddUpdateStateState extends ConsumerState<AddUpdateState> {
                       children: [
                         CustomText(
                           widget.method == CRUD.update
-                              ? 'Update ${widget.name} state'
-                              : 'Add ${widget.name} state',
+                              ? '更新 ${widget.name} 状态'
+                              : '添加 ${widget.name} 状态',
                           type: FontStyle.H6,
                           fontWeight: FontWeightt.Semibold,
                           fontSize: 22,

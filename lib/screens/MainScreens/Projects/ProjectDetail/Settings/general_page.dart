@@ -97,7 +97,7 @@ class _GeneralPageState extends ConsumerState<GeneralPage> {
                   Row(
                     children: [
                       CustomText(
-                        'Icon & Name',
+                        '图标和名称',
                         type: FontStyle.Small,
                         color: themeProvider.themeManager.tertiaryTextColor,
                       ),
@@ -289,7 +289,7 @@ class _GeneralPageState extends ConsumerState<GeneralPage> {
                   Row(
                     children: [
                       CustomText(
-                        'Description',
+                        '描述',
                         type: FontStyle.Small,
                         color: themeProvider.themeManager.tertiaryTextColor,
                       ),
@@ -319,7 +319,7 @@ class _GeneralPageState extends ConsumerState<GeneralPage> {
                   Row(
                     children: [
                       CustomText(
-                        'Cover',
+                        '封面',
                         type: FontStyle.Small,
                         color: themeProvider.themeManager.tertiaryTextColor,
                       ),
@@ -423,7 +423,7 @@ class _GeneralPageState extends ConsumerState<GeneralPage> {
                       //   ),
                       // ),
                       CustomText(
-                        'Identifier',
+                        '标识符',
                         type: FontStyle.Small,
                         color: themeProvider.themeManager.tertiaryTextColor,
                       ),
@@ -469,7 +469,7 @@ class _GeneralPageState extends ConsumerState<GeneralPage> {
                               children: [
                                 //const SizedBox(height: 50),
                                 selectionCard(
-                                    title: 'Secret',
+                                    title: '私密',
                                     isSelected: !isProjectPublic,
                                     onTap: () {
                                       setState(() {
@@ -481,7 +481,7 @@ class _GeneralPageState extends ConsumerState<GeneralPage> {
                                 const Divider(),
                                 //const SizedBox(height: 5),
                                 selectionCard(
-                                    title: 'Public',
+                                    title: '公开',
                                     isSelected: isProjectPublic,
                                     onTap: () {
                                       setState(() {
@@ -509,7 +509,7 @@ class _GeneralPageState extends ConsumerState<GeneralPage> {
                       child: Row(
                         children: [
                           CustomText(
-                            !isProjectPublic ? 'Secret' : 'Public',
+                            !isProjectPublic ? '私密' : '公开',
                             type: FontStyle.Small,
                             color: themeProvider.themeManager.primaryTextColor,
                           ),
@@ -573,14 +573,14 @@ class _GeneralPageState extends ConsumerState<GeneralPage> {
                       collapsedBackgroundColor:
                           const Color.fromRGBO(255, 12, 12, 0.1),
                       title: CustomText(
-                        'Danger Zone',
+                        '危险地带',
                         textAlign: TextAlign.left,
                         type: FontStyle.H5,
                         color: themeProvider.themeManager.textErrorColor,
                       ),
                       children: [
                         CustomText(
-                          'The danger zone of the project delete page is a critical area that requires careful consideration and attention. When deleting a project, all of the data and resources within that project will be permanently removed and cannot be recovered.',
+                          '项目删除页面的危险区域是一个需要仔细考虑和注意的关键区域。删除项目时，项目中的所有数据和资源都将被永久删除，且无法恢复。',
                           type: FontStyle.Medium,
                           maxLines: 8,
                           textAlign: TextAlign.left,
@@ -618,7 +618,7 @@ class _GeneralPageState extends ConsumerState<GeneralPage> {
                               ),
                               child: const Center(
                                   child: CustomText(
-                                'Delete Project',
+                                '删除项目',
                                 color: Colors.white,
                                 type: FontStyle.Medium,
                                 overrride: true,

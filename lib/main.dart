@@ -155,7 +155,7 @@ class _MyAppState extends ConsumerState<MyApp> with WidgetsBindingObserver {
     // themeProvider.getTheme();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'mission plan',
       theme: ThemeData(
         // theme the entire app with list of colors
 

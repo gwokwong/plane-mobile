@@ -275,28 +275,28 @@ class _ImportExportCancelState extends ConsumerState<ImportExportCancel> {
                 DropdownMenuItem(
                   value: 'Admin',
                   child: CustomText(
-                    'Admin',
+                    '管理员',
                     type: FontStyle.H5,
                   ),
                 ),
                 DropdownMenuItem(
                   value: 'Member',
                   child: CustomText(
-                    'Member',
+                    '成员',
                     type: FontStyle.H5,
                   ),
                 ),
                 DropdownMenuItem(
                   value: 'Viewer',
                   child: CustomText(
-                    'Viewer',
+                    '查看者',
                     type: FontStyle.H5,
                   ),
                 ),
                 DropdownMenuItem(
                   value: 'Guest',
                   child: CustomText(
-                    'Guest',
+                    '访客',
                     type: FontStyle.H5,
                   ),
                 ),
