@@ -393,7 +393,7 @@ class EmptyPlaceholder {
                   SizedBox(
                     width: 10,
                   ),
-                  CustomText('Add Page',
+                  CustomText('添加页面',
                       type: FontStyle.Small,
                       fontWeight: FontWeightt.Medium,
                       overrride: true,
@@ -519,7 +519,7 @@ class EmptyPlaceholder {
                   SizedBox(
                     width: 10,
                   ),
-                  CustomText('Add View',
+                  CustomText('添加视图',
                       type: FontStyle.Small,
                       overrride: true,
                       fontWeight: FontWeightt.Medium,
@@ -548,7 +548,7 @@ class EmptyPlaceholder {
             padding: const EdgeInsets.only(top: 35),
             width: width * 0.7,
             child: CustomText(
-              'You are not a member of this project',
+              '您不是该项目的成员',
               type: FontStyle.H5,
               fontWeight: FontWeightt.Semibold,
               color: themeProvider.themeManager.primaryTextColor,
@@ -560,7 +560,7 @@ class EmptyPlaceholder {
             width: 300,
             padding: const EdgeInsets.only(top: 10),
             child: const CustomText(
-              'You are not a member of this project, but you can join this project by clicking the button below.',
+              '您不是该项目的成员，但您可以点击下面的按钮加入该项目。',
               textAlign: TextAlign.center,
               type: FontStyle.Small,
               color: Color.fromRGBO(133, 142, 150, 1),
@@ -608,7 +608,7 @@ class EmptyPlaceholder {
                         SizedBox(
                           width: 10,
                         ),
-                        CustomText('Click to join',
+                        CustomText('点击加入',
                             type: FontStyle.Small,
                             fontWeight: FontWeightt.Medium,
                             color: Colors.white),

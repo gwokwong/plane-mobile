@@ -80,7 +80,7 @@ class _CreateModuleState extends ConsumerState<CreateModule> {
                               child: Row(
                                 children: [
                                   CustomText(
-                                    'Module Title ',
+                                    '模块标题 ',
                                     type: FontStyle.Small,
                                     fontWeight: FontWeightt.Regular,
                                     color: themeProvider
@@ -103,7 +103,7 @@ class _CreateModuleState extends ConsumerState<CreateModule> {
                                 controller: titleController,
                                 validator: (value) {
                                   if (value!.isEmpty) {
-                                    return 'Please enter module name';
+                                    return '请输入模块名称';
                                   }
                                   return null;
                                 },
@@ -188,7 +188,7 @@ class _CreateModuleState extends ConsumerState<CreateModule> {
                               child: Row(
                                 children: [
                                   CustomText(
-                                    'Start Date ',
+                                    '开始时间 ',
                                     type: FontStyle.Small,
                                     fontWeight: FontWeightt.Regular,
                                     color: themeProvider
@@ -263,7 +263,7 @@ class _CreateModuleState extends ConsumerState<CreateModule> {
                               child: Row(
                                 children: [
                                   CustomText(
-                                    'Target Date',
+                                    '预定时间',
                                     // color: themeProvider.secondaryTextColor,
                                     type: FontStyle.Small,
                                     fontWeight: FontWeightt.Regular,
@@ -339,7 +339,7 @@ class _CreateModuleState extends ConsumerState<CreateModule> {
                               child: Row(
                                 children: [
                                   CustomText(
-                                    'Status ',
+                                    '状态 ',
                                     type: FontStyle.Small,
                                     fontWeight: FontWeightt.Regular,
                                     color: themeProvider
@@ -423,7 +423,7 @@ class _CreateModuleState extends ConsumerState<CreateModule> {
                               child: Row(
                                 children: [
                                   CustomText(
-                                    'Lead ',
+                                    '领导 ',
                                     type: FontStyle.Small,
                                     fontWeight: FontWeightt.Regular,
                                     color: themeProvider
@@ -502,7 +502,7 @@ class _CreateModuleState extends ConsumerState<CreateModule> {
                               child: Row(
                                 children: [
                                   CustomText(
-                                    'Assignee ',
+                                    '负责人 ',
                                     type: FontStyle.Small,
                                     fontWeight: FontWeightt.Regular,
                                     color: themeProvider
@@ -607,7 +607,7 @@ class _CreateModuleState extends ConsumerState<CreateModule> {
                       margin: const EdgeInsets.symmetric(
                           vertical: 20, horizontal: 20),
                       child: Button(
-                        text: 'Create Module',
+                        text: '创建模块',
                         ontap: () async {
                           if (!formKey.currentState!.validate()) {
                             return;

@@ -388,13 +388,13 @@ class _OnBoardingScreenState extends ConsumerState<OnBoardingScreen> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         CustomText(
-                          'Module Title',
+                          '模块标题',
                           type: FontStyle.Medium,
                           color: themeProvider.themeManager.primaryTextColor,
                           fontWeight: FontWeightt.Semibold,
                         ),
                         const CustomText(
-                          'In Progress',
+                          '进行中',
                           type: FontStyle.XSmall,
                           color: Color.fromRGBO(163, 163, 163, 1),
                           fontWeight: FontWeightt.Medium,

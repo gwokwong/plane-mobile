@@ -728,7 +728,7 @@ class _PageDetailState extends ConsumerState<PageDetail> {
 
                           //text
                           CustomText(
-                            'Add new block',
+                            '添加新区块',
                             type: FontStyle.Small,
                             color: themeProvider.themeManager.primaryColour,
                           ),

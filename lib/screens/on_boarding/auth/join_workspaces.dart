@@ -42,7 +42,7 @@ class _JoinWorkspacesState extends ConsumerState<JoinWorkspaces> {
     return Scaffold(
       appBar: !widget.fromOnboard
           ? CustomAppBar(
-              text: 'Workspace invites',
+              text: '工作区邀请',
               onPressed: () {
                 Navigator.of(context).pop();
               },
@@ -69,7 +69,7 @@ class _JoinWorkspacesState extends ConsumerState<JoinWorkspaces> {
                       : Container(),
                   widget.fromOnboard
                       ? CustomText(
-                          'Join Workspaces',
+                          '加入工作区',
                           type: FontStyle.H4,
                           fontWeight: FontWeightt.Semibold,
                           color: themeProvider.themeManager.primaryTextColor,
@@ -84,7 +84,7 @@ class _JoinWorkspacesState extends ConsumerState<JoinWorkspaces> {
                             child: SizedBox(
                               width: MediaQuery.of(context).size.width * 0.6,
                               child: CustomText(
-                                'Currently you have no invited workspaces to join.',
+                                '目前您没有受邀加入的工作区',
                                 type: FontStyle.Small,
                                 color:
                                     themeProvider.themeManager.primaryTextColor,
@@ -190,7 +190,7 @@ class _JoinWorkspacesState extends ConsumerState<JoinWorkspaces> {
                                                 height: 3,
                                               ),
                                               CustomText(
-                                                'Invited',
+                                                '受邀',
                                                 type: FontStyle.XSmall,
                                                 color: themeProvider
                                                     .themeManager
@@ -250,7 +250,7 @@ class _JoinWorkspacesState extends ConsumerState<JoinWorkspaces> {
                   ),
                   selectedWorkspaces.isNotEmpty
                       ? Button(
-                          text: 'Accept & join',
+                          text: '接受并加入',
                           ontap: () async {
                             if (selectedWorkspaces.isNotEmpty) {
                               await prov.joinWorkspaces(
@@ -285,7 +285,7 @@ class _JoinWorkspacesState extends ConsumerState<JoinWorkspaces> {
                             } else {
                               CustomToast().showToast(
                                   context,
-                                  'Please select atleast one workspace',
+                                  '请至少选择一个工作区',
                                   themeProvider,
                                   toastType: ToastType.defult);
                             }

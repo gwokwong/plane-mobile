@@ -27,32 +27,32 @@ class ModuleProvider with ChangeNotifier {
   int statusIndex = -1;
   var moduleSatatus = [
     {
-      'name': 'Backlog',
+      'name': '积压',
       'value': 'backlog',
       'color': const Color.fromRGBO(94, 106, 210, 1),
     },
     {
-      'name': 'Planned',
+      'name': '计划',
       'value': 'planned',
       'color': const Color.fromRGBO(38, 181, 206, 1),
     },
     {
-      'name': 'In Progress',
+      'name': '进行中',
       'value': 'in-progress',
       'color': const Color.fromRGBO(242, 201, 76, 1),
     },
     {
-      'name': 'Paused',
+      'name': '暂停',
       'value': 'paused',
       'color': const Color.fromRGBO(255, 105, 0, 1),
     },
     {
-      'name': 'Completed',
+      'name': '已完成',
       'value': 'completed',
       'color': const Color.fromRGBO(76, 183, 130, 1),
     },
     {
-      'name': 'Cancelled',
+      'name': '已取消',
       'value': 'cancelled',
       'color': const Color.fromRGBO(204, 29, 16, 1),
     },

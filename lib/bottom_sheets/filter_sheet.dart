@@ -35,11 +35,11 @@ class _FilterSheetState extends ConsumerState<FilterSheet> {
   ];
 
   List states = [
-    {'id': 'backlog', 'name': 'Backlog'},
-    {'id': 'unstarted', 'name': 'Unstarted'},
-    {'id': 'started', 'name': 'Started'},
-    {'id': 'completed', 'name': 'Completed'},
-    {'id': 'cancelled', 'name': 'Cancelled'}
+    {'id': 'backlog', 'name': 'Backlog','title': '积压'},
+    {'id': 'unstarted', 'name': 'Unstarted','title': '未开始'},
+    {'id': 'started', 'name': 'Started','title': '已开始'},
+    {'id': 'completed', 'name': 'Completed','title': '已完成'},
+    {'id': 'cancelled', 'name': 'Cancelled','title': '已取消'}
   ];
 
   Filters filters = Filters(

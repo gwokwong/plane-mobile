@@ -24,7 +24,7 @@ class _StatusSheetState extends ConsumerState<StatusSheet> {
           Row(
             children: [
               const CustomText(
-                'Status',
+                '状态',
                 type: FontStyle.H6,
                 fontWeight: FontWeightt.Semibold,
               ),
