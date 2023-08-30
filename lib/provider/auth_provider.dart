@@ -419,10 +419,7 @@ class AuthProvider extends ChangeNotifier {
                     .workspaces
                     .where((element) =>
                         element['id'] ==
-                        ref
-                            .read(ProviderList.profileProvider)
-                            .userProfile
-                            .lastWorkspaceId)
+                        ref.read(ProviderList.profileProvider).userProfile.lastWorkspaceId)
                     .first['slug'],
                 method: HttpMethod.get,
                 projectID: "");
@@ -433,7 +430,7 @@ class AuthProvider extends ChangeNotifier {
 
           notifyListeners();
           CustomToast().showSimpleToast(
-            'Something went wrong while fetching your data, Please try again.',
+            '获取数据时出现错误，请重试',
           );
         }
       });
@@ -447,7 +444,7 @@ class AuthProvider extends ChangeNotifier {
         );
       } else {
         CustomToast().showSimpleToast(
-          'Something went wrong, please try again.',
+          '出错了，请重试。',
         );
       }
     }
